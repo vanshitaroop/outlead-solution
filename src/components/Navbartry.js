@@ -5,12 +5,12 @@ export const Navbartry = () => {
     <>
             <header>
         <div class="logo">
-            <img src={logo} alt="" style={{width:"80%", marginTop:"0px"}}/>
+            <img src={logo} alt="" style={{width:"65px", marginTop:"0px",verticalAlign:"baseline"}}/>
         </div>
         <input type="checkbox" id="nav_check" hidden/>
         <nav>
             <div class="logo">
-            <img src={logo} alt="" style={{width:"80%", marginTop:"0px"}}/>
+            <img src={logo} alt="" style={{width:"80px", marginTop:"0px",verticalAlign:"baseline"}}/>
             </div>
             <ul>
                 <li>
