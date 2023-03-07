@@ -278,7 +278,7 @@ nav ul li a:hover {
 }
 nav ul li a.active {
   color: #fff;
-  background:orange;
+  background:orangefn;
 }
 .hamburger {
   display: none;
@@ -309,7 +309,7 @@ nav ul li a.active {
       z-index: 999;
       width: 280px;
       height: 100vh;
-      background-color: #fefefe;
+      background-color: #282C34;
       transition: 0.2s;
       box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
   }
@@ -370,7 +370,7 @@ nav ul li a.active {
   margin-left: 10px;
 }
 .col-2 .GAQ:hover{
-  background-color: #282c34;
+  background-color:orange;
   color: #fff;
 }
 /* .nav{
@@ -426,8 +426,8 @@ a{
 .col-2 .GAQ{
   margin-left: 0;
   margin-right: 30px;
-  background: #fff;
-  color: #282c34;
+  background: #282c34;
+  color: #fff;
   font-weight: 500;
   
 }
@@ -451,3 +451,104 @@ a{
     transform: translate(-15px,0px);
   }
 }
+.homePageGif1{
+
+
+  padding-bottom: 129%;
+  position: absolute;
+  
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  transition: transform 0.5s;
+
+}
+.card{
+  margin: 10px auto;
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 6px;
+  height: 100%;
+  transition: 0.3s;
+  background-color: aliceblue;
+}
+.card:hover {
+box-shadow: 1px 10px 16px 0 rgba(0,0,0,0.3);
+}
+.card-title{
+  text-align: center;
+  color: #666666;
+  font-weight: bold;
+}
+.card-text{
+      font-weight: 500;
+color: #66686b;
+}
+.card-image{
+  text-align: center;
+  margin: 5vh 0;
+}
+.card-text{
+  text-align: center;
+}
+
+.title-heading{
+  font-size: 3em;
+  text-align: center;
+  margin: 4%;
+  font-weight: bold;
+
+}
+.headingtext h1{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  
+}
+.headingtext h1:before {
+  background-color: #c50000;
+  content: '';
+  display: block;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 5px;
+}
+.headingtext h1:after {
+  background-color: #c50000;
+  content: '';
+  display: block;
+position:absolute; left: 120px;
+  height: 3px;
+  width: 75px;
+  margin-bottom: 0.25em;
+}
+
+.textt {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.lottie-animated{
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%)
+}
+

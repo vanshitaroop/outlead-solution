@@ -60,7 +60,7 @@ export const Home = () => {
                         </div>
                         <br />
                         <br />
-                        <a href="" className='GAQ'>Learn More</a> <a href="">Contact</a>
+                        <a href="" className='GAQ'>Learn More</a> <a href="" className='GAQ'>Contact</a> 
                     </div>
                 </div>
             </div>
