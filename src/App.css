@@ -551,4 +551,7 @@ position:absolute; left: 120px;
   top: 30%;
   transform: translate(-50%,-50%)
 }
+.head{
+  color: orange;
+}
 
