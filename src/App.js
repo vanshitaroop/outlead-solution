@@ -2,9 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
-import { Navbartry } from './components/Navbartry';
+
 import { Whatwedo } from './components/Whatwedo';
 import { Process } from './components/Process';
+import { Clients } from './components/Clients';
+
+import { Testting } from './components/Testting';
 function App() {
   return (
     <div className="App">
@@ -12,7 +15,10 @@ function App() {
       {/* <Navbartry/> */}
       <Home/>
       <Whatwedo/>
+      <Clients/>
+      <Testting/>
       <Process/>
+      
     </div>
   );
 }
