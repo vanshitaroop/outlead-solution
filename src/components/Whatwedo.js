@@ -9,8 +9,11 @@ export const Whatwedo = () => {
   return (
 
     <div className='container'>
+      <div class="nine">
+  <h1><span><h2>Services</h2></span></h1>
+</div>
       <div className='row '>
-        <div className='col-md-6 container' style={{ color: "white", textAlign: "" }}>
+        <div className='col-md-6 container '  data-aos="zoom-out-right" style={{ color: "white", textAlign: "" }}>
           {/* <img src={Gif} alt=""/> */}
           <Lottie animationData={meeting} />
         </div>
@@ -23,8 +26,9 @@ export const Whatwedo = () => {
       </div>
     </div>
   </div> */}
-            <div class="row">
-              <div class="col-md-6 ">
+            <div class="row" data-aos="zoom-out-left" ata-aos-offset="500"
+          data-aos-duration="500">
+              <div class="col-md-6"  >
                 <div class="card mx-3 mt-3">
                   <div class="card-body" style={{ position: "relative" }}>
                     <h4 class="card-title head" >Lead Generation</h4>
@@ -46,7 +50,6 @@ export const Whatwedo = () => {
                     </div>
                     <br/>
                     <p class="card-text">Attend all the weekly interactive sessions from 9pm - 10pm, 4 times a week and do all your projects and assignments.</p>
-
                   </div>
                 </div>
               </div>
