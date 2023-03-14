@@ -6,8 +6,7 @@ export const Testting = () => {
     <>
    <div className='container' style={{marginTop:"280px",textAlign:"center"}}>
    <a href="" className='GAQ' style={{textDecoration:"none",color:"white"}}>Explore</a> 
-   </div>
-  
+   </div>  
     </>
   )
 }

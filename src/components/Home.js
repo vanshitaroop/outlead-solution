@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/img/logo.png"
+
 import bg from "../assets/img/man.png"
 import elements from "../assets/img/elements.png"
 import { useState } from 'react'

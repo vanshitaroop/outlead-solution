@@ -34,7 +34,7 @@ export const Whatwedo = () => {
                       <h4 class="card-title head" >Lead Generation</h4>
                       <Lottie animationData={leadgeneration} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b", marginTop: "90px" }} >
-                        <i class="fas fa-laptop-code fa-5x"></i>
+                        
                       </div>
                       <p class="card-text ">Go through the course content thoroughly and enroll before the batch begins.</p>
                     </div>
@@ -46,7 +46,7 @@ export const Whatwedo = () => {
                       <h4 class="card-title head">Social media marketing</h4>
                       <Lottie animationData={socialMedia} style={{ width: "35%", marginTop: "15px" }} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b" }}>
-                        <i class="fas fa-chalkboard-teacher fa-5x"></i>
+                        
                       </div>
                       <br />
                       <p class="card-text">Attend all the weekly interactive sessions from 9pm - 10pm, 4 times a week and do all your projects and assignments.</p>
@@ -56,14 +56,15 @@ export const Whatwedo = () => {
               </div>
               <div class="row my-5">
               </div>
-              <div class="row">
+              <div class="row"  data-aos="zoom-out-left" 
+>
                 <div class="col-md-6 ">
                   <div class="card mx-3 mt-3">
                     <div class="card-body">
                       <h4 class="card-title head">Website development</h4>
                       <Lottie animationData={website} style={{ width: "40%", marginTop: "30px" }} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b" }}>
-                        <i class="fas fa-laptop-code fa-5x"></i>
+                        
                       </div>
                       <br />
                       <p class="card-text ">Go through the course content thoroughly and enroll before the batch begins.</p>
@@ -76,7 +77,7 @@ export const Whatwedo = () => {
                       <h4 class="card-title head">Content Writting</h4>
                       <Lottie animationData={contentWritting} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b" }}>
-                        <i class="fas fa-chalkboard-teacher fa-5x"></i>
+                        
                       </div>
                       <br />
                       <br />

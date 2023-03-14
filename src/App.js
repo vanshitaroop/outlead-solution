@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
@@ -8,6 +8,8 @@ import { Process } from './components/Process';
 import { Clients } from './components/Clients';
 
 import { Testting } from './components/Testting';
+import { Testimonial } from './components/Testimonial';
+import { Footer } from './components/Footer';
 function App() {
   return (
     <div className="App">
@@ -18,7 +20,8 @@ function App() {
       <Clients/>
       <Testting/>
       <Process/>
-      
+      <Testimonial/>
+      <Footer/>
     </div>
   );
 }
