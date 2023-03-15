@@ -263,7 +263,7 @@ header {
   margin-top: 8px;
 }
 
-nav .logo {
+/* nav .logo {
   display: none;
 }
 
@@ -356,7 +356,7 @@ nav ul li a.active {
   .hamburger {
     display: block;
   }
-}
+} */
 
 
 /* Home page css */
@@ -718,7 +718,7 @@ a{
   background-repeat: no-repeat;
   background-color: #282C34;
   /* border-radius: 40%; */
- 
+
 }
 
 .carousel__face:nth-child(3) {
@@ -728,7 +728,7 @@ a{
   background-repeat: no-repeat;
   background-color: #282C34;
   /* border-radius: 40%; */
-  
+
 }
 
 .carousel__face:nth-child(4) {
@@ -786,20 +786,22 @@ a{
   background-repeat: no-repeat;
   background-color: #282C34;
 }
-.content{
+
+.content {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   word-wrap: break-word;
 }
+
 /* Testimonial css */
 /* ========== 00. General Styling ========== */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 * {
-    box-sizing: border-box;
-    outline: 0;
-    transition: all 0.3s ease;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.3s ease;
 }
 
 /* body {
@@ -813,130 +815,130 @@ a{
 } */
 
 blockquote {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 section.t-bq-section {
-    padding: 30px;
-    margin-bottom: 60px;
+  padding: 30px;
+  margin-bottom: 60px;
 }
 
 .t-bq-wrapper.t-bq-wrapper-boxed {
-    max-width: 576px;
-    margin: 0 auto;
+  max-width: 576px;
+  margin: 0 auto;
 }
 
 .t-bq-wrapper.t-bq-wrapper-fullwidth {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* ========== 05. Paul ========== */
 
 .t-bq-quote-paul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    min-height: 250px;
-    box-shadow: 2px 2px 25px orange;
-    border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-height: 250px;
+  box-shadow: 2px 2px 25px orange;
+  border-radius: 10px;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-pattern {
-    flex-basis: 80px;
-    background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
-    border-radius: 10px 0 0 10px;
+  flex-basis: 80px;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/hexabump.png") repeat;
+  border-radius: 10px 0 0 10px;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-base {
-    flex-basis: calc(100% - 80px);
-    background: #ffffff;
-    padding: 40px 30px 50px 80px;
-    font-size: 11pt;
-    line-height: 1.62em;
-    border-radius: 0 10px 10px 0;
+  flex-basis: calc(100% - 80px);
+  background: #ffffff;
+  padding: 40px 30px 50px 80px;
+  font-size: 11pt;
+  line-height: 1.62em;
+  border-radius: 0 10px 10px 0;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-qmark {
-    position: absolute;
-    top: 50px;
-    left: 105px;
-    font-family: Garamond, Georgia, "Times New Roman", serif;
-    font-size: 42pt;
-    color: #999999;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  font-family: Garamond, Georgia, "Times New Roman", serif;
+  font-size: 42pt;
+  color: #999999;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-userpic {
-    position: absolute;
-    top: 80px;
-    left: 35px;
-    width: 80px;
-    height: 70px;
-    background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/strug.jpg") center center no-repeat;
-    background-size: cover;
-    border-radius: 50%;
+  position: absolute;
+  top: 80px;
+  left: 35px;
+  width: 80px;
+  height: 70px;
+  background: url("https://raw.githubusercontent.com/taviskaron/t-div-blockquotes/main/img/strug.jpg") center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-meta {
-    margin-top: 30px;
-    padding-top: 10px;
-    border-top: 2px dotted #777777;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 2px dotted #777777;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author,
 .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
-    color: #777777;
+  color: #777777;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author {
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 10pt;
-    font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 10pt;
+  font-weight: bold;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-author cite {
-    font-style: normal;
+  font-style: normal;
 }
 
 .t-bq-quote-paul .t-bq-quote-paul-meta .t-bq-quote-paul-source {
-    font-size: 9pt;
+  font-size: 9pt;
 }
 
 @media screen and (max-width: 768px) {
 
-    .t-bq-quote-paul .t-bq-quote-paul-pattern {
-        flex-basis: 20px;
-    }
+  .t-bq-quote-paul .t-bq-quote-paul-pattern {
+    flex-basis: 20px;
+  }
 
-    .t-bq-quote-paul .t-bq-quote-paul-base {
-        flex-basis: calc(100% - 20px);
-        padding: 100px 30px 50px 30px;
-    }
+  .t-bq-quote-paul .t-bq-quote-paul-base {
+    flex-basis: calc(100% - 20px);
+    padding: 100px 30px 50px 30px;
+  }
 
-    .t-bq-quote-paul .t-bq-quote-paul-userpic {
-        width: 80px;
-        height: 50px;
-        left: 40px;
-        top: 20px;
-    }
+  .t-bq-quote-paul .t-bq-quote-paul-userpic {
+    width: 80px;
+    height: 50px;
+    left: 40px;
+    top: 20px;
+  }
 
-    .t-bq-quote-paul .t-bq-quote-paul-qmark {
-        left: 100px;
-        top: 45px;
-    }
+  .t-bq-quote-paul .t-bq-quote-paul-qmark {
+    left: 100px;
+    top: 45px;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
-    .t-bq-quote-jasper .t-bq-quote-jasper-base {
-        padding-left: 30px;
-    }
+  .t-bq-quote-jasper .t-bq-quote-jasper-base {
+    padding-left: 30px;
+  }
 }
 
 
@@ -952,82 +954,173 @@ section.t-bq-section {
 
 /* Footer css */
 footer {
-  padding: 7em 0; }
+  padding: 7em 0;
+}
 
 .footer-07 {
-  background: #121212; }
-  .footer-07 a {
-    color: #a3de83; }
-  .footer-07 p {
-    color: rgba(255, 255, 255, 0.3); }
-  .footer-07 .footer-heading {
-    font-size: 30px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 30px; }
-    .footer-07 .footer-heading .logo {
-      color: #fff; }
-  .footer-07 .menu {
-    margin-bottom: 30px; }
-    .footer-07 .menu a {
-      color: rgba(255, 255, 255, 0.6);
-      margin: 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .footer-07 .ftco-footer-social li a {
-    background: transparent;
-    border: 1px solid #a3de83; }
-    .ftco-footer-social li {
-      list-style: none;
-      margin: 0 10px 0 0;
-      display: inline-block; }
-      .ftco-footer-social li a {
-        height: 40px;
-        width: 40px;
-        display: block;
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 50%;
-        position: relative; }
-        .ftco-footer-social li a span {
-          position: absolute;
-          font-size: 20px;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-        .ftco-footer-social li a:hover {
-          color: #fff; }
-    
-    .form-control {
-      height: 52px;
-      background: #fff;
-      color: #000;
-      font-size: 18px;
-      border-radius: 0px;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-      border: 1px solid rgba(0, 0, 0, 0.1); }
-      .form-control:focus, .form-control:active {
-        outline: none !important;
-        -webkit-box-shadow: none;
-        box-shadow: none; }
-    
-    textarea.form-control {
-      height: inherit !important; }
-    
-    .ftco-section {
-      padding: 12em 0; }
-      .ftco-section h2 {
-        margin-bottom: 0; }
+  background: #121212;
+}
 
-    footer a{
-      text-decoration: none;
-    }
-    i.fa {
-      display: inline-block;
-      border-radius: 60px;
-      box-shadow: 0 0 2px orange;
-      padding: 0.5em 0.6em;
-    
-    }
+.footer-07 a {
+  color: #a3de83;
+}
+
+.footer-07 p {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-07 .footer-heading {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer-07 .footer-heading .logo {
+  color: #fff;
+}
+
+.footer-07 .menu {
+  margin-bottom: 30px;
+}
+
+.footer-07 .menu a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-07 .ftco-footer-social li a {
+  background: transparent;
+  border: 1px solid #a3de83;
+}
+
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+.ftco-footer-social li a {
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  position: relative;
+}
+
+.ftco-footer-social li a span {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.ftco-footer-social li a:hover {
+  color: #fff;
+}
+
+.form-control {
+  height: 52px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus,
+.form-control:active {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: inherit !important;
+}
+
+.ftco-section {
+  padding: 12em 0;
+}
+
+.ftco-section h2 {
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px orange;
+  padding: 0.5em 0.6em;
+}
+/* contactCeo css */
+.card-container, .front, .back {
+	width: 20rem;
+	height: 20rem;
+}
+.card-container {
+	margin: 5rem;
+}
+.front, .back {
+	box-sizing: border-box;
+	padding: 2rem;
+	border-radius: 4px;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
+	font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+/* front side bg is green gradient */ .front {
+	background-color: white
+}
+/* back side bg is orange gradient */ .back {
+	background-color: white
+}
+.card-container {
+	position: relative;
+}
+.front, .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	overflow: hidden;
+	transition: transform .8s ease;
+}
+.back {
+	transform: rotateY(180deg);
+}
+.card-container:hover .front {
+	transform: rotateY(-180deg);
+}
+.card-container:hover .back {
+	transform: rotateY(0deg);
+}
+.card-container {
+	perspective: 75rem;
+}
+.forCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-contact{
+  height: 400px;
+  width: 100%;
+  background-image: url("/src//assets/img/test.jpg");
+  opacity: 0.5;
+}

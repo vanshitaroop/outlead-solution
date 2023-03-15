@@ -3,42 +3,36 @@ import logo from "../assets/img/Outleadlogo.png"
 export const Navbartry = () => {
   return (
     <>
-            <header>
-        <div class="logo">
-            <img src={logo} alt="" style={{width:"65px", marginTop:"0px",verticalAlign:"baseline"}}/>
-        </div>
-        <input type="checkbox" id="nav_check" hidden/>
-        <nav>
-            <div class="logo">
-            <img src={logo} alt="" style={{width:"80px", marginTop:"0px",verticalAlign:"baseline"}}/>
-            </div>
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Products</a>
-                </li>
-                <li>
-                    <a href="">Features</a>
-                </li>
-                <li>
-                    <a href="">Pricing</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <label for="nav_check" class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  <div class="container">
+    {/* <a class="navbar-brand " href="/">Navbar</a> */}
+    <img style={{width:"80px",marginLeft:"80px"}} src={logo}/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mx-auto">　
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </>
   )
 }
