@@ -10,6 +10,8 @@ import { Testimonial } from './components/Testimonial';
 import { Footer } from './components/Footer';
 import { Navbartry } from './components/Navbartry';
 import { Mainpage } from './components/Mainpage';
+import { About } from './components/About';
+import { Portfolio } from './components/Portfolio';
 // import { Navbartry } from './components/Navbartry';
 function App() {
   return (
@@ -17,9 +19,9 @@ function App() {
       <Navbartry/>
       <Routes>
           <Route exact path="/" element={<Mainpage/>} />
-          <Route exact path="/about" element={<ContactCeo/>} />
-          {/* <Route exact path="/login" element={<Login showAlert={showAlert} />} />
-          <Route exact path="/signup" element={<Signup showAlert={showAlert} />} /> */}
+          <Route exact path="/contactCeo" element={<ContactCeo/>} />
+          <Route exact path="/about" element={<About/>} />
+          <Route exact path="/portfolio" element={<Portfolio/>} />
         </Routes>
       <Footer/>
     </div>

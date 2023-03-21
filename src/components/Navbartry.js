@@ -1,11 +1,12 @@
 import React from 'react'
 import logo from "../assets/img/Outleadlogo.png"
+import { Link } from 'react-router-dom'
 export const Navbartry = () => {
   return (
     <>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
   <div class="container">
-    {/* <a class="navbar-brand " href="/">Navbar</a> */}
+    {/* <Link class="navbar-brand " href="/">Navbar</Link> */}
     <img style={{width:"80px",marginLeft:"80px"}} src={logo}/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -15,19 +16,19 @@ export const Navbartry = () => {
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <Link class="nav-link" to="/about">About</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <Link class="nav-link" to="#">Services</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <Link class="nav-link" to="#">Portfolio</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Blogs</a>
+          <Link class="nav-link" to="#">Blogs</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <Link class="nav-link" to="#">Contact</Link>
         </li>
       </ul>
     </div>

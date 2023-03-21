@@ -1,5 +1,7 @@
 .App {}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap');
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -461,6 +463,7 @@ a{
   font-weight: 500;
 
 }
+
 
 .col-2 a {
   text-decoration: none;
@@ -939,7 +942,9 @@ section.t-bq-section {
   .t-bq-quote-jasper .t-bq-quote-jasper-base {
     padding-left: 30px;
   }
+
 }
+
 
 
 @keyframes rotate360 {
@@ -1059,13 +1064,20 @@ footer a {
   text-decoration: none;
 }
 
-i.fa {
+footer i.fa {
   display: inline-block;
   border-radius: 60px;
   box-shadow: 0 0 2px orange;
   padding: 0.5em 0.6em;
 }
+
 /* contactCeo css */
+.back i {
+  display: inline-block;
+  border-radius: 60px;
+ 
+  padding: 0.5em 0.6em;
+}
 .card-container, .front, .back {
 	width: 20rem;
 	height: 20rem;
@@ -1076,19 +1088,21 @@ i.fa {
 .front, .back {
 	box-sizing: border-box;
 	padding: 2rem;
+  padding-top: 0px;
 	border-radius: 4px;
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .25);
 	font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
 	font-size: 2rem;
 	color: #fff;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	text-align: center;
+  background-color: #1F2124;
 }
 /* front side bg is green gradient */ .front {
-	background-color: white
+  background-color: #1F2124;
 }
 /* back side bg is orange gradient */ .back {
-	background-color: white
+  background-color: #1F2124;
 }
 .card-container {
 	position: relative;
@@ -1124,3 +1138,80 @@ i.fa {
   background-image: url("/src//assets/img/test.jpg");
   opacity: 0.5;
 }
+.front h4{
+  font-family: 'Poppins', sans-serif;
+}
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-size:small;
+  text-align: left;
+  font-family: "Poppins";
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #00a8a8;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+/* About page css */
+.aboutpage{
+  background-image: url("../src/assets/img/bgcontact.png");
+  width: 100%;
+  height: 85vh;
+  background-repeat: no-repeat;
+ background-size: cover;
+ background-color: #fff;
+ background-position: center;
+}
+.aboutHeading{
+  font-weight: 900;
+  font-size: 3.5rem;
+  padding-top: 70px;
+}
+.abouthr{
+  border: 2px solid red;
+  width: 10%;
+}
+.contentofAbout{
+  height:50em;
+  width: 40em;
+  padding-left: 64px;
+  text-align: left;
+  font-family: Poppins;
+  font-size: large;
+}
+
+.GAQ{
+  margin-left: 0;
+  margin-right: 30px;
+  background: #282c34;
+  color: #fff;
+  font-weight: 500;
+}
+.GAQ:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+
+
+
+
+

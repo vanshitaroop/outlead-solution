@@ -1,9 +1,9 @@
 import React from 'react'
-
 import bg from "../assets/img/man.png"
 import elements from "../assets/img/elements.png"
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 export const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -60,7 +60,7 @@ export const Home = () => {
                         </div>
                         <br />
                         <br />
-                        <a href="" className='GAQ'>Learn More</a> <a href="" className='GAQ'>Contact</a> 
+                        <Link to="/contactCeo" className='GAQ'>Learn More</Link><Link to="/contactCeo" className='GAQ'>Contact</Link> 
                     </div>
                 </div>
             </div>
