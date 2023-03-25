@@ -19,16 +19,16 @@ export const Navbartry = () => {
           <Link class="nav-link" to="/about">About</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">Services</Link>
+          <Link class="nav-link" to="/services">Services</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">Portfolio</Link>
+          <Link class="nav-link" to="/">Home</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">Blogs</Link>
+          <Link class="nav-link" to="/blogs">Blogs</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="#">Contact</Link>
+          <Link class="nav-link" to="/contactceo">Contact</Link>
         </li>
       </ul>
     </div>
