@@ -51,7 +51,7 @@ export const Home = () => {
                         <img src={bg} alt="" />
                         <img src={elements} className="elements" alt="" />
                     </div>
-                    <div className='col-2'>
+                    <div className='col-2 col-2-mob'>
                         <h1>Outlead Solutions<br /> <span style={{ color: "orange" }}>Marketing </span>Agency</h1>
                         {/* <h1> {`Hi I m vanshita, A `} <span className="wrap">{text}</span> </h1> */}
                         <br/>
@@ -60,7 +60,7 @@ export const Home = () => {
                         </div>
                         <br />
                         <br />
-                        <Link to="/contactCeo" className='GAQ'>Learn More</Link><Link to="/contactCeo" className='GAQ'>Contact</Link> 
+                        <Link to="/contactCeo" className='GAQ GAQ-mob'>Learn More</Link><Link to="/contactCeo" className='GAQ GAQ-mob'>Contact</Link> 
                     </div>
                 </div>
             </div>

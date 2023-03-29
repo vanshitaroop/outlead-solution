@@ -5,7 +5,7 @@ import testing from "../assets/img/client4.png";
 export const Testimonial = () => {
     return (
         <>
-            <div class="nine" style={{ marginTop: "120px", marginBottom: "60px" }}>
+            <div class="nine" style={{ marginTop: "60px", marginBottom: "60px" }}>
                 <h1><span><h2>Testimonials</h2></span></h1>
             </div>
             <section class="t-bq-section" id="paul">

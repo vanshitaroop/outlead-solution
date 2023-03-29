@@ -16,7 +16,7 @@ export const Process = () => {
           <img src={main} alt="" style={{ width: "90%" }} />
         </div>
         <div className='col-md-6' style={{ paddingTop: "130px" }} data-aos="fade-left"  >
-         <div className='content'>
+         <div className='content content-mob'>
          <h2 style={{ color: "orange" }}>Why to Choose us??</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
           <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>

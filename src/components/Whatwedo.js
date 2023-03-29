@@ -13,7 +13,7 @@ export const Whatwedo = () => {
       </div>
       <div className='container'>
         <div className='row '>
-          <div className='col-md-6 container ' data-aos="zoom-out-right" style={{ color: "white", textAlign: "" }}>
+          <div className='col-md-6 container' data-aos="zoom-out-right" style={{ color: "white", textAlign: "" }}>
             {/* <img src={Gif} alt=""/> */}
             <Lottie animationData={meeting} />
           </div>
@@ -40,13 +40,12 @@ export const Whatwedo = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="card mx-3 mt-3">
+                <div class="col-md-6 cards-mob">
+                  <div class="card mx-3 mt-3 ">
                     <div class="card-body">
                       <h4 class="card-title head">Social media marketing</h4>
                       <Lottie animationData={socialMedia} style={{ width: "35%", marginTop: "15px" }} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b" }}>
-                        
                       </div>
                       <br />
                       <p class="card-text">Attend all the weekly interactive sessions from 9pm - 10pm, 4 times a week and do all your projects and assignments.</p>
@@ -54,11 +53,11 @@ export const Whatwedo = () => {
                   </div>
                 </div>
               </div>
-              <div class="row my-5">
+              <div class="row my-2">
               </div>
               <div class="row"  data-aos="zoom-out-left" 
 >
-                <div class="col-md-6 ">
+                <div class="col-md-6 cards-mob ">
                   <div class="card mx-3 mt-3">
                     <div class="card-body">
                       <h4 class="card-title head">Website development</h4>
@@ -71,13 +70,12 @@ export const Whatwedo = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 cards-mob">
                   <div class="card mx-3 mt-3">
                     <div class="card-body">
                       <h4 class="card-title head">Content Writting</h4>
                       <Lottie animationData={contentWritting} className="lottie-animated" />;
                       <div class="card-image" style={{ color: "#5e371b" }}>
-                        
                       </div>
                       <br />
                       <br />

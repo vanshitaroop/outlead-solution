@@ -370,7 +370,7 @@ nav ul li a.active {
 
 .hero {
   width: 100%;
-  min-height: 100vh;
+  margin-bottom:80px;
   /* background: linear-gradient(45deg, #a700ff , #4d19db); */
   background: #282c34;
   padding-left: 4%;
@@ -4304,5 +4304,24 @@ hr {
     height: 600px;
   }
 }
-
-
+@media (max-width: 529px){
+.GAQ-mob{
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+.col-2-mob h1{
+  font-size: 30px;
+}
+.col-2-mob h3{
+  font-size: 20px;
+}
+.cards-mob{
+  margin-top: 10px;
+}
+.content-mob{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+}
