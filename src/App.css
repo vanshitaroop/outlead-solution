@@ -1077,13 +1077,7 @@ footer i.fa {
  
   padding: 0.5em 0.6em;
 }
-.card-container, .front, .back {
-	width: 23rem;
-	height: 23rem;
-}
-.card-container {
-	margin: 5rem;
-}
+
 .front, .back {
 	box-sizing: border-box;
 	padding: 2rem;
@@ -4565,10 +4559,30 @@ padding-bottom:50px;
     width: 80%;
     margin-left: 120px;
   }
+  .card-container, .front, .back {
+    width: 23rem;
+    height: 23rem;
+  }
+  .card-container {
+    margin: 2rem;
+  }
+  #contact-mobile{
+    display: none;
+  }
 }
 @media only screen and (max-width: 600px) {
-  .mobile-res-lott{
-    width: 50%;
+  /* .mobile-res-lott{
+    width: 0%;
     margin-left: 120px;
+  } */
+  .card-container, .front, .back {
+    width: 15rem;
+    height: 15rem;
+  }
+  .card-container {
+    margin: 2rem;
+  }
+  #contact-laptop{
+    display: none;
   }
 }
