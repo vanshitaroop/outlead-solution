@@ -8,7 +8,7 @@ export const Clients = () => {
          <div class="nine" style={{marginTop:"60px"}}>
         <h1><span><h2>Our Key Clients</h2></span></h1>
       </div>
-       <div className="container">
+       {/* <div className="container">
        <div class="containerClient " style={{paddingBottom:"120px"}}>
                 <div class="carousell">
                     <div class="carousel__facee"><span></span></div>
@@ -22,7 +22,7 @@ export const Clients = () => {
                     <div class="carousel__facee"><span></span></div>
                 </div>
             </div>
-       </div>
+       </div> */}
        
         </>
     )
