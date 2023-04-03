@@ -93,7 +93,7 @@ export const ContactCeo = () => {
                                 <hr />
                             </div>
                             <div style={{ paddingTop: "10px" }}>
-                                <table class="check-list" style={{ marginLeft: "50px" }}>
+                                <table class="check-list" style={{fontSize:"12px"}}>
                                     <tr>
                                         <td><li style={{ paddingLeft: "20px" }}>Loreum</li></td>
                                         <td style={{ paddingLeft: "20px" }}><li style={{ paddingLeft: "20px" }}>ipsum</li></td>
@@ -125,8 +125,8 @@ export const ContactCeo = () => {
                                 </h4>
                                 <hr />
                             </div>
-                            <div style={{ paddingTop: "10px" }}>
-                                <table class="check-list" style={{ marginLeft: "50px" }}>
+                            <div style={{ paddingTop: "10px" ,paddingLeft:"0px"}}>
+                                <table class="check-list" >
                                     <tr>
                                         <td><li style={{ paddingLeft: "20px" }}>Loreum</li></td>
                                         <td style={{ paddingLeft: "20px" }}><li style={{ paddingLeft: "20px" }}>ipsum</li></td>
