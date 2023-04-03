@@ -4566,3 +4566,9 @@ padding-bottom:50px;
     margin-left: 120px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .mobile-res-lott{
+    width: 50%;
+    margin-left: 120px;
+  }
+}
