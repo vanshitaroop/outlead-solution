@@ -10,19 +10,18 @@ export const Clients = () => {
       </div>
        <div className="container">
        <div class="containerClient " style={{paddingBottom:"120px"}}>
-                <div class="carousel">
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
-                    <div class="carousel__face"><span></span></div>
+                <div class="carousell">
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
+                    <div class="carousel__facee"><span></span></div>
                 </div>
             </div>
-            
        </div>
        
         </>

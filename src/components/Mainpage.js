@@ -5,6 +5,7 @@ import { Clients } from './Clients';
 import { Home } from './Home';
 import { Testting } from './Testting';
 import { Testimonial } from './Testimonial';
+
 export const Mainpage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ export const Mainpage = () => {
         <Testting/>
         <Process/>
         <Testimonial/>
+        
     </>
   )
 }

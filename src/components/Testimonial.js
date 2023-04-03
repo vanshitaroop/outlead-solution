@@ -1,87 +1,48 @@
 import React from 'react'
-import contentWritting from "../assets/json/contentWritting.json"
-import Lottie from "lottie-react";
-import testing from "../assets/img/client4.png";
+
 export const Testimonial = () => {
-    return (
-        <>
-            <div class="nine" style={{ marginTop: "60px", marginBottom: "60px" }}>
-                <h1><span><h2>Testimonials</h2></span></h1>
+  return (
+    <>
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
             </div>
-            <section class="t-bq-section" id="paul">
-                <div class="t-bq-wrapper t-bq-wrapper-boxed" data-aos="fade-left" 
-                data-aos-duration="500">
-                    <div class="t-bq-quote t-bq-quote-paul">
-                        {/* <div class="t-bq-quote-paul-userpic">
-                       <img src={testing} style={{width:"100%"}}/>
-                        </div> */}
-                        <div class="t-bq-quote-paul-qmark">
-                            &#10077;
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 1</h4>
                         </div>
-                        <div class="t-bq-quote-paul-pattern">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 2</h4>
                         </div>
-                        <div class="t-bq-quote-paul-base">
-                            <blockquote class="t-bq-quote-paul-text" cite="Strugatsky Brothers">
-                                Psychologically, almost all of them were slaves - slaves of faith, slaves of their own kind, slaves of passions, slaves of greed. And if, by the will of fate, one of them was born or became a master, he did not know what to do with his freedom. He again hurried to become a slave - a slave of wealth, unnatural excesses, a slave of dissolute friends, a slave of his slaves.
-                            </blockquote>
-                            <div class="t-bq-quote-paul-meta">
-                                <div class="t-bq-quote-paul-meta-info">
-                                    <div class="t-bq-quote-paul-author"><cite>Strugatsky Brothers</cite></div>
-                                    <div class="t-bq-quote-paul-source"><span>Hard to Be a God</span></div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <h4>Client 3</h4>
                         </div>
                     </div>
                 </div>
-                <div class="t-bq-wrapper t-bq-wrapper-boxed my-5" data-aos="fade-right" 
-                 >
-                    <div class="t-bq-quote t-bq-quote-paul">
-                        {/* <div class="t-bq-quote-paul-userpic">
-                       <img src={testing} style={{width:"100%"}}/>
-                        </div> */}
-                        <div class="t-bq-quote-paul-qmark">
-                            &#10077;
-                        </div>
-                        <div class="t-bq-quote-paul-pattern">
-                        </div>
-                        <div class="t-bq-quote-paul-base">
-                            <blockquote class="t-bq-quote-paul-text" cite="Strugatsky Brothers">
-                                Psychologically, almost all of them were slaves - slaves of faith, slaves of their own kind, slaves of passions, slaves of greed. And if, by the will of fate, one of them was born or became a master, he did not know what to do with his freedom. He again hurried to become a slave - a slave of wealth, unnatural excesses, a slave of dissolute friends, a slave of his slaves.
-                            </blockquote>
-                            <div class="t-bq-quote-paul-meta">
-                                <div class="t-bq-quote-paul-meta-info">
-                                    <div class="t-bq-quote-paul-author"><cite>Strugatsky Brothers</cite></div>
-                                    <div class="t-bq-quote-paul-source"><span>Hard to Be a God</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="t-bq-wrapper t-bq-wrapper-boxed my-5" data-aos="fade-left" 
-                data-aos-duration="500">
-                    <div class="t-bq-quote t-bq-quote-paul">
-                        {/* <div class="t-bq-quote-paul-userpic">
-                       <img src={testing} style={{width:"100%"}}/>
-                        </div> */}
-                        <div class="t-bq-quote-paul-qmark">
-                            &#10077;
-                        </div>
-                        <div class="t-bq-quote-paul-pattern">
-                        </div>
-                        <div class="t-bq-quote-paul-base">
-                            <blockquote class="t-bq-quote-paul-text" cite="Strugatsky Brothers">
-                                Psychologically, almost all of them were slaves - slaves of faith, slaves of their own kind, slaves of passions, slaves of greed. And if, by the will of fate, one of them was born or became a master, he did not know what to do with his freedom. He again hurried to become a slave - a slave of wealth, unnatural excesses, a slave of dissolute friends, a slave of his slaves.
-                            </blockquote>
-                            <div class="t-bq-quote-paul-meta">
-                                <div class="t-bq-quote-paul-meta-info">
-                                    <div class="t-bq-quote-paul-author"><cite>Strugatsky Brothers</cite></div>
-                                    <div class="t-bq-quote-paul-source"><span>Hard to Be a God</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </>
+  )
 }

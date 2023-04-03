@@ -8,8 +8,9 @@ export const ContactCeo = () => {
         <>
             {/* <div className='banner-contact'>    
             </div> */}
-            <div>
-                <Lottie animationData={trycontact} style={{ width: "80%", marginLeft: "120px" }} />
+            {/* style={{ width: "80%", marginLeft: "120px" }} */}
+            <div className='lapttop-res-lott'>
+                <Lottie animationData={trycontact} />
             </div>
             <div className='row'>
                 <div className='col-md-6 forCenter'>

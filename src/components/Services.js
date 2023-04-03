@@ -4,8 +4,8 @@ export const Services = () => {
   return (
    <>
    <div>
-   <main className='services'>
-    <div class="page-section" style={{backgroundColor:"#212529"}}>
+   <main className='row'>
+    <div class="page-section col-md-12 col-sm-12" style={{backgroundColor:"#212529"}}>
       <div class="container" style={{marginLeft:"150px",marginRight:"150px"}}>
         <div class="row">
           <div class="col-lg-6 py-3">
@@ -24,7 +24,7 @@ export const Services = () => {
       </div> 
     </div> 
   
-    <div class="page-section">
+    <div class="page-section col-md-12 col-sm-12">
       <div class="container">
         <div class="text-center">
           <div class="subhead">Why Choose Us</div>
