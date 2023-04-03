@@ -3876,11 +3876,11 @@ figure.effect-duke:hover p {
 .tm-section-underline {
   width: 50%;
 }
-
+/* 
 .btn {
   padding: 11px 40px;
   border-radius: 0;
-}
+} */
 
 .btn-primary {
   background-color: orange;

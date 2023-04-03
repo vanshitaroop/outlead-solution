@@ -143,7 +143,7 @@ export const ContactCeo = () => {
                             <div class="card-body">
                                 {/* <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5> */}
                                 <p class="card-text mx-2" style={{fontSize:"15px",marginTop:"10px",textAlign:"left"}}>Lorem ipsum dolor sit amet, minim veniam, quis nostrud exercitation ex ea commodo consequat.  card's content.</p>
-                                <a type="button" href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' class="btn btn-outline-success" style={{borderRadius:"10%"}}><i className='fa fa-whatsapp' style={{textDecorat:"none"}}></i></a>
+                                <a type="button" href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' class="btn btn-outline-success" style={{borderRadius:"10%"}}><i className='fa fa-whatsapp' style={{textDecoration:"none"}}></i></a>
                             </div>
                         </div>
                     </div>
