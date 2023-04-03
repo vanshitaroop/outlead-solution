@@ -9,9 +9,9 @@ export const ContactCeo = () => {
             {/* <div className='banner-contact'>    
             </div> */}
             {/* style={{ width: "80%", marginLeft: "120px" }} */}
-            <div className='lapttop-res-lott mobile-res-lott'>
+            {/* <div className='lapttop-res-lott mobile-res-lott'>
                 <Lottie animationData={trycontact} />
-            </div>
+            </div> */}
             <div className='row'>
                 <div className='col-md-6 forCenter'>
                     <div class="card-container">
