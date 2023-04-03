@@ -11,11 +11,10 @@ export const Footer = () => {
                             <img src={logo} style={{width:"10%",marginBottom:"30px"}}/>
                             <p class="menu">
                                 <a href="#">Home</a>
-                                <a href="#">Agent</a>
                                 <a href="#">About</a>
-                                <a href="#">Listing</a>
                                 <a href="#">Blog</a>
                                 <a href="#">Contact</a>
+                                <a href="#">Service</a>
                             </p>
                             {/* <ul class="ftco-footer-social p-0">
                                 <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>
