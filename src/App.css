@@ -1165,15 +1165,18 @@ footer i.fa {
     transform: rotate(45deg);
 }
 /* About page css */
-.aboutpage{
-  background-image: url("../src/assets/img/bgcontact.png");
-  width: 100%;
-  height: 85vh;
-  background-repeat: no-repeat;
- background-size: cover;
- background-color: #fff;
- background-position: center;
+@media only screen and (max-width: 768px) {
+  .aboutpage{
+    background-image: url("../src/assets/img/bgcontact.png");
+    width: 100%;
+    height: 85vh;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #fff;
+   background-position: center;
+  }
 }
+
 .aboutHeading{
   font-weight: 900;
   font-size: 3.5rem;
