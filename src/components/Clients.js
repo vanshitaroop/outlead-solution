@@ -25,11 +25,7 @@ export const Clients = () => {
                 </div>
             </div>
        </div>
-       <div className="card">
-        <div className="card-top">
-            
-        </div>
-       </div>
+       
        
         </>
     )

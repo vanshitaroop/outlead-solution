@@ -6,14 +6,14 @@ export const Services = () => {
    <div>
    <main className='row'>
     <div class="page-section col-md-12 col-sm-12" style={{backgroundColor:"#212529"}}>
-      <div class="container" style={{marginLeft:"150px",marginRight:"150px"}}>
+      <div class="container service">
         <div class="row">
           <div class="col-lg-6 py-3">
             <h2 class="title-section">We're <span class="marked">ready to</span> Serve you with best</h2>
             <div class="divider"></div>
             <p class="mb-5">We provide marketing services to startups & small business to looking <br/> for partner for their digital media, design & dev lead generation & communication.</p>
             <a href="#" class="btn btn-primary mr-3">More Details</a>
-            <a href="#" class="btn btn-outline mx-2">See pricing</a>
+            <a href="#" class="btn btn-outline mx-2" >See pricing</a>
           </div>
           <div class="col-lg-6 py-3">
             <div class="img-place text-center">

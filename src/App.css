@@ -1210,6 +1210,10 @@ footer i.fa {
     font-family: Poppins;
     font-size: large;
   }
+  .service{
+    margin-left:"150px";
+    margin-right:"150px"
+  }
 }
 
 @media only screen and (max-width:600px) {
@@ -1243,7 +1247,10 @@ footer i.fa {
     text-align: left;
     font-family: Poppins;
     font-size:small;
-  
+  }
+  .service{
+    margin-left:"50px";
+    margin-right:"50px"
   }
 }
 
@@ -1965,7 +1972,7 @@ a.text-dark:focus {
 .btn-danger:hover,
 .btn-dark:hover {
   color: #fff;
-  background-color: #645F88;
+  background-color: #1d1b25;
   border-color: transparent;
 }
 
@@ -1993,11 +2000,12 @@ a.text-dark:focus {
 
 .btn-outline {
   border-color: #D7D5E9;
-  color: #645F88;
+  color: #fff;
 }
 
 .btn-outline:hover {
-  background-color: #F6F5FC;
+  background-color: #fff;
+  color: #212529;
 }
 
 .btn-outline-primary {
@@ -4036,7 +4044,7 @@ figure.effect-duke:hover p {
 
 .btn-primary {
   background-color: orange;
-  border-color: #99ccff;
+  border-color: #fff;
 }
 
 .btn-secondary {
