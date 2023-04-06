@@ -1165,7 +1165,7 @@ footer i.fa {
     transform: rotate(45deg);
 }
 /* About page css */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .aboutpage{
     background-image: url("../src/assets/img/bgcontact.png");
     width: 100%;
@@ -1175,6 +1175,9 @@ footer i.fa {
    background-color: #fff;
    background-position: center;
   }
+}
+.aboutpage{
+  background-color: #fff;
 }
 
 .aboutHeading{
