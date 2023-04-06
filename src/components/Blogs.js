@@ -8,7 +8,7 @@ export const Blogs = () => {
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-12 offset-sm-0 col-md-6 offset-md-6">
-              <div class="tm-site-name-container">
+              <div class="" style={{paddingLeft:"20px"}}>
                 <div class="tm-site-name-container-inner">
                   <h1 class="text-uppercase tm-text-primary tm-site-name">
                     Industries
