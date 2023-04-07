@@ -1,39 +1,86 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 import logo from "../assets/img/Outleadlogo.png"
-import { Link } from 'react-router-dom'
-export const Navbartry = () => {
+import { Navbar, Nav } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
+export function Navbartry() {
+  const [showBasic, setShowBasic] = useState(false);
+
   return (
-    <>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-  <div class="container">
-    {/* <Link class="navbar-brand " href="/">Navbar</Link> */}
-    <img style={{width:"80px",marginLeft:"80px"}} src={logo}/>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav mx-auto">　
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <Link class="nav-link" to="/about">About</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/services">Services</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/">Home</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/blogs">Blogs</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/contactceo">Contact</Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-    </>
-  )
+    <MDBNavbar expand='lg' dark bgColor='dark'>
+      <MDBContainer fluid>
+        <MDBNavbarBrand to=""> <img
+          src={logo}
+          height='85'
+          alt=''
+          loading='lazy'
+        /></MDBNavbarBrand>
+        <MDBNavbarToggler
+          onClick={() => setShowBasic(!showBasic)}
+          data-target='#navbarRightAlignExample'
+          aria-controls='navbarRightAlignExample'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar show={showBasic}>
+          <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+                <LinkContainer to="/about">
+                  <Nav.Link>About</Nav.Link>
+                </LinkContainer>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+                <LinkContainer to="/">
+                  <Nav.Link>Home</Nav.Link>
+                </LinkContainer>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+                <LinkContainer to="/services">
+                  <Nav.Link>Service</Nav.Link>
+                </LinkContainer>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+                <LinkContainer to="/contactceo">
+                  <Nav.Link>Contact</Nav.Link>
+                </LinkContainer>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+                <LinkContainer to="/blogs">
+                  <Nav.Link>Blogs</Nav.Link>
+                </LinkContainer>
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+  );
 }
