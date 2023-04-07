@@ -21,7 +21,9 @@ import { Navbar, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 export function Navbartry() {
   const [showBasic, setShowBasic] = useState(false);
-
+  function handleClick(){
+    setShowBasic(false);
+  }
   return (
     <MDBNavbar expand='lg' dark bgColor='dark'>
       <MDBContainer fluid>
@@ -46,35 +48,35 @@ export function Navbartry() {
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/about">
-                  <Nav.Link>About</Nav.Link>
+                  <Nav.Link onClick={handleClick}>About</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/">
-                  <Nav.Link>Home</Nav.Link>
+                  <Nav.Link onClick={handleClick}>Home</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/services">
-                  <Nav.Link>Service</Nav.Link>
+                  <Nav.Link onClick={handleClick}>Service</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/contactceo">
-                  <Nav.Link>Contact</Nav.Link>
+                  <Nav.Link onClick={handleClick}>Contact</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/blogs">
-                  <Nav.Link>Blogs</Nav.Link>
+                  <Nav.Link onClick={handleClick}>Blogs</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
