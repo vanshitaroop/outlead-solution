@@ -15,7 +15,7 @@ export const Mainpage = () => {
         <Clients/>
         <Testting/>
         <Process/>
-      <Testimonial/>
+      <Testimonial />
        
     </>
   )

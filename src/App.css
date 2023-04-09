@@ -4766,6 +4766,14 @@ hr {
     display: none;
   }
 }
+.aliceCar{
+   padding: 120px;
+   background-color: white;
+}
+.itemm {
+  display: inline-block;
+  margin-right: 20px;
+}
 
 
 @media only screen and (max-width: 600px) {
