@@ -6,6 +6,7 @@ import { Home } from './Home';
 import { Testting } from './Testting';
 import { Testimonial } from './Testimonial';
 import SimpleSlider from './SimpleSlider';
+import { OurkeyClients2 } from './OurkeyClients2';
 export const Mainpage = () => {
 
   return (
@@ -13,6 +14,7 @@ export const Mainpage = () => {
         <Home/>
         <Whatwedo/>
         <Clients/>
+        <OurkeyClients2/>
         <Testting/>
         <Process/>
       <Testimonial />

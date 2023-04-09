@@ -4768,11 +4768,21 @@ hr {
 }
 .aliceCar{
    padding: 20px;
+   padding-top: 90px;
    background-color: white;
 }
-.itemm {
+aliceCarclient{
+  padding: 20px;
+  padding-top: 90px;
+  background-color: #282C34;
+}
+/* .item {
   display: inline-block;
   margin-right: 20px;
+  text-align: center;
+} */
+.center{
+  text-align: center;
 }
 
 
@@ -4796,4 +4806,13 @@ hr {
   #contact-laptop {
     display: none;
   }
+  .not-for-mobile{
+    display: none;
+  }
 }
+@media only screen and (min-width: 600px){
+  .not-for-laptop{
+    display: none;
+  }
+}
+
