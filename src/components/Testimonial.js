@@ -1,48 +1,28 @@
+import ReactCardSlider from 'react-card-slider-component';
+// a slide object contains the image link, title and function/click event for when a user clicks on a card
 import React from 'react'
 
 export const Testimonial = () => {
+    function sliderClick(){
+        alert("it is clicked")
+    }
+    const slides = [
+        {image:"https://picsum.photos/200/300",title:"This is a title",description:"This is a description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/600/500",title:"This is a second title",description:"This is a second description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/700/600",title:"This is a third title",description:"This is a third description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/500/400",title:"This is a fourth title",description:"This is a fourth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/200/300",title:"This is a fifth title",description:"This is a fifth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/800/700",title:"This is a sixth title",description:"This is a sixth description",clickEvent:sliderClick},
+        {image:"https://picsum.photos/300/400",title:"This is a seventh title",description:"This is a seventh description",clickEvent:sliderClick},
+    ]
+    
   return (
-    <>
-    <section class="testimonial text-center">
-        <div class="container">
-
-            <div class="heading white-heading">
-                Testimonial
-            </div>
-            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
-             
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="testimonial4_slide">
-                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 1</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial4_slide">
-                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" /><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 2</h4>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial4_slide">
-                            <img src="https://i.ibb.co/8x9xK4H/team.jpg" class="img-circle img-responsive" />
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                            <h4>Client 3</h4>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    </>
+    <ReactCardSlider slides={slides}/>
   )
 }
+
+

@@ -4,6 +4,7 @@ import elements from "../assets/img/elements.png"
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
 export const Home = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -64,7 +65,7 @@ export const Home = () => {
                     </div>
                 </div>
             </div>
-
+           
         </>
     )
 }
