@@ -11,7 +11,7 @@
     "lottie-react": "^2.4.0",
     "lottie-web": "^5.10.2",
     "mdb-react-ui-kit": "^6.0.0",
-    "react": "^16.0.0",
+    "react": "^16.14.0",
     "react-bootstrap": "^2.7.2",
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^16.0.0",
