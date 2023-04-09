@@ -8,7 +8,7 @@ import main from "../assets/img/Main-Idea.png"
 export const Process = () => {
   return (
     <>
-      <div class="nine" style={{marginTop:"120px"}}>
+      <div class="nine op-mobile op-laptop">
         <h1><span><h2>Our Process</h2></span></h1>
       </div>
       <div className='row ' style={{ marginTop: "150px", color: "#fff" }}>

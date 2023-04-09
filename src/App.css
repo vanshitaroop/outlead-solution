@@ -1214,6 +1214,9 @@ footer i.fa {
     margin-left:"150px";
     margin-right:"150px"
   }
+  .op-laptop{
+    margin-top: 120px;
+  }
 }
 
 @media only screen and (max-width:600px) {
@@ -1251,6 +1254,9 @@ footer i.fa {
   .service{
     margin-left:"50px";
     margin-right:"50px"
+  }
+  .op-mobile{
+    margin-top: 10px;
   }
 }
 
