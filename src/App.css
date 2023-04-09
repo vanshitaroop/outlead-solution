@@ -1217,6 +1217,9 @@ footer i.fa {
   .op-laptop{
     margin-top: 120px;
   }
+  .row-laptop{
+    margin-top: 150px;
+  }
 }
 
 @media only screen and (max-width:600px) {
@@ -1257,6 +1260,9 @@ footer i.fa {
   }
   .op-mobile{
     margin-top: 10px;
+  }
+  .row-mobile{
+    margin-top: 20px;
   }
 }
 

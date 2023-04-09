@@ -54,7 +54,6 @@ export const OurkeyClients2 = () => {
         
         
       />
-      <hr style={{color:"white"}}/>
          </div>
     </>
     );

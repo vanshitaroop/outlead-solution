@@ -11,7 +11,7 @@ export const Process = () => {
       <div class="nine op-mobile op-laptop">
         <h1><span><h2>Our Process</h2></span></h1>
       </div>
-      <div className='row ' style={{ marginTop: "150px", color: "#fff" }}>
+      <div className='row row-mobile row-laptop' style={{ color: "#fff" }}>
         <div className='col-md-6' data-aos="fade-right">
           <img src={main} alt="" style={{ width: "90%" }} />
         </div>
