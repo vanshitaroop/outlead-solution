@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../assets/img/Outleadlogo.png"
+import { Link } from 'react-router-dom'
 export const Footer = () => {
     return (
         <>
@@ -10,11 +11,10 @@ export const Footer = () => {
                             {/* <h2 class="footer-heading"><a href="#" class="logo">Outlead Solutions</a></h2> */}
                             <img src={logo} style={{width:"10%",marginBottom:"30px"}}/>
                             <p class="menu">
-                                <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Blog</a>
-                                <a href="#">Contact</a>
-                                <a href="#">Service</a>
+                                <Link to="/">Home</Link>
+                                <Link to="/about">About</Link>
+                                <Link to="/contactCeo">Contact</Link>
+                                <Link to="/services">Service</Link>
                             </p>
                             {/* <ul class="ftco-footer-social p-0">
                                 <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="ion-logo-twitter"></span></a></li>

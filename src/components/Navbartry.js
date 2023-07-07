@@ -73,13 +73,13 @@ export function Navbartry() {
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
+            {/* <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/blogs">
                   <Nav.Link onClick={handleClick}>Blogs</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
-            </MDBNavbarItem>
+            </MDBNavbarItem> */}
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
