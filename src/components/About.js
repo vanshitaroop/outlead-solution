@@ -16,10 +16,9 @@ export const About = () => {
         </p> */}
         <p style={{paddingLeft:"0px"}}>
         We are an innovative marketing company, <br/>
-        dedicated to helping businesses succeed through 
-        <br/>tailored strategies and captivating campaigns. 
-        <br/>Together, we unlock our clients' 
-       potential in today's competitive marketplace.
+        dedicated to helping businesses succeed <br/>
+        through tailored strategies and captivating  <br/>
+        campaigns. 
 </p>
         <button type="button" class="GAQ">Text us! <i class="fa fa-paper-plane"></i></button>
       </div>

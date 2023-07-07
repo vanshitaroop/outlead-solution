@@ -4,11 +4,11 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 
 export const Testimonial = () => {
     const items = [
-        <div key={1} className="item center"><h1>Testimonial 1</h1></div>,
-        <div key={2} className="item center"><h1>Testimonial 2</h1></div>,
-        <div key={3} className="item center"><h1>Testimonial 3</h1></div>,
-        <div key={4} className="item center"><h1>Testimonial 4</h1></div>,
-        <div key={5} className="item center"><h1>Testimonial 5</h1></div>,
+        <div key={1} className="item center"><h3>Testimonial 1</h3></div>,
+        <div key={2} className="item center"><h3>Testimonial 2</h3></div>,
+        <div key={3} className="item center"><h3>Testimonial 3</h3></div>,
+        <div key={4} className="item center"><h3>Testimonial 4</h3></div>,
+        <div key={5} className="item center"><h3>Testimonial 5</h3></div>,
       ];
       
 
@@ -27,7 +27,7 @@ export const Testimonial = () => {
         items={items}
         responsive={{
           0: { items: 1 },
-          768: { items: 3 },
+          768: { items: 1},
           1024: { items: 1 },
           
         }}
