@@ -14,6 +14,7 @@ import { About } from './components/About';
 import { Portfolio } from './components/Portfolio';
 import { Services } from './components/Services';
 import { Blogs } from './components/Blogs';
+import AllClients from './components/AllClients';
 // import { Navbartry } from './components/Navbartry';
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/portfolio" element={<Portfolio/>}/>
           <Route exact path="/services" element={<Services/>}/>
-          {/* <Route exact path="/blogs" element={<Blogs/>}/> */}
+          <Route exact path="/blogs" element={<Blogs/>}/>
+          <Route exact path="/AllClients" element={<AllClients/>}/>
+
         </Routes>
       <Footer/>
     </div>

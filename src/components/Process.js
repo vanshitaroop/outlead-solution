@@ -11,9 +11,10 @@ export const Process = () => {
       <div class="nine op-mobile op-laptop">
         <h1><span><h2>Our Process</h2></span></h1>
       </div>
+      <div className='container'>
       <div className='row row-mobile row-laptop' style={{ color: "#fff" }}>
         <div className='col-md-6' data-aos="fade-right">
-          <img src={main} alt="" style={{ width: "90%" }} />
+          <img src={main} alt="" style={{ width: "100%" }} />
         </div>
         <div className='col-md-6' style={{ paddingTop: "130px" }} data-aos="fade-left"  >
          <div className='content content-mob'>
@@ -22,6 +23,7 @@ export const Process = () => {
           <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
          </div>
         </div>
+      </div>
       </div>
     </>
   )

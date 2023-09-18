@@ -27,12 +27,12 @@ export function Navbartry() {
   return (
     <MDBNavbar expand='lg' dark bgColor='dark'>
       <MDBContainer fluid>
-        <MDBNavbarBrand to=""> <img
+        <Link to={"/"}> <img
           src={logo}
           height='85'
           alt=''
           loading='lazy'
-        /></MDBNavbarBrand>
+        /></Link>
         <MDBNavbarToggler
           onClick={() => setShowBasic(!showBasic)}
           data-target='#navbarRightAlignExample'
@@ -73,13 +73,13 @@ export function Navbartry() {
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            {/* <MDBNavbarItem>
+            <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/blogs">
                   <Nav.Link onClick={handleClick}>Blogs</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
-            </MDBNavbarItem> */}
+            </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
