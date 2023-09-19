@@ -16,7 +16,7 @@ export const Whatwedo = () => {
         </h1>
       </div>
       <div className="container">
-        <div className="row ">
+        <div className="row">
           <div
             className="col-sm-6 container"
             data-aos="zoom-out-right"

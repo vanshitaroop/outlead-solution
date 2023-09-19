@@ -516,7 +516,7 @@ a{
   transform: scale(1.1);
 }
 
-.card {
+ .card {
   transition: transform 0.5s;
 }
 
@@ -4853,14 +4853,16 @@ aliceCarclient {
   width: 80%;
   aspect-ratio: 3/2;
   object-fit: contain;
-  background-color: white;
+  background-color: #000;
   padding: 3px;
   border-radius: 10px;
 }
+
 @media (max-width: 700px) {
   .para {
     width: 100%;
   }
+ 
   .testo_img {
     margin-left: 30px;
   }

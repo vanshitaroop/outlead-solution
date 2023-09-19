@@ -9,36 +9,19 @@ import React from "react";
 // import img8 from "../assets/img/client8.png";
 const client = [
   {
-    src: "Sources/images/prepseed 2.png",
+    src: "Sources/images/hi-tech.png",
   },
   {
-    src: "Sources/images/hi-tech.png",
+    src: "Sources/images/prepseed.png",
   },
   {
     src: "Sources/images/ssrvm.png",
   },
+  // {
+  //   src: "Sources/images/shiv-textile.png",
+  // },
   {
-    src: "Sources/images/digvijay.png",
-  },
-  {
-    src: "Sources/images/konnekt-ed.png",
-  },
-  {
-    src: "Sources/images/shiv-textile.png",
-  },
-  {
-    src: "Sources/images/vrudev.png",
-  },
-
-  {
-    src: "Sources/images/client4.png",
-  },
-  {
-    src: "Sources/images/client5.png",
-  },
-
-  {
-    src: "Sources/images/client8.png",
+    src: "Sources/images/shivtex.png",
   },
   {
     src: "Sources/images/bbgroyals.png",
@@ -46,6 +29,59 @@ const client = [
   {
     src: "Sources/images/archbude.png",
   },
+  {
+    src: "Sources/images/bsquare.png",
+  },
+  {
+    src: "Sources/images/digvijay.png",
+  },
+  {
+    src: "Sources/images/cardinal.png",
+  },
+  {
+    src: "Sources/images/logo.png",
+  },
+  {
+    src: "Sources/images/logou.png",
+  },
+  {
+    src: "Sources/images/maak advisors.JPG",
+  },
+  {
+    src: "Sources/images/mastersoft-logo.webp",
+  },
+  {
+    src: "Sources/images/quickdraft.JPG",
+  },
+  {
+    src: "Sources/images/raywell studio.JPG",
+  },
+  {
+    src: "Sources/images/shinkan.JPG",
+  },
+  {
+    src: "Sources/images/ninefive.png",
+  },
+
+  {
+    src: "Sources/images/inspire.JPG",
+  },
+  {
+    src: "Sources/images/entroid.JPG",
+  },
+  {
+    src: "Sources/images/enableX_logo.png",
+  },
+  {
+    src: "Sources/images/divya attires.JPG",
+  },
+  {
+    src: "Sources/images/craftezy.JPG",
+  },
+  {
+    src: "Sources/images/bluefire.JPG",
+  },
+  
 ];
 const AllClients = () => {
   return (
