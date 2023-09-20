@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
 import "./text.css";
 import Slider from "react-slick";
@@ -152,18 +152,7 @@ const testimonial = [
   {
     img: "Sources/images/shivtex.png",
   },
-  // {
-  //   img: "Sources/images/bbgroyals.png",
-  // },
-  // {
-  //   img: "Sources/images/archbude.png",
-  // },
-  // {
-  //   img: "Sources/images/client3.png",
-  // },
-  // {
-  //   img: "Sources/images/digvijay.png",
-  // },
+
 ];
 const testimonialtwo = [
 
@@ -303,7 +292,7 @@ export const Clients = () => {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -313,7 +302,7 @@ export const Clients = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -358,7 +347,7 @@ export const Clients = () => {
             </Slider>
           </div>
           <div className="not_for_mobile">
-            <>
+            
               <div
                 id="carouselExampleControls"
                 className="carousel slide"
@@ -419,7 +408,7 @@ export const Clients = () => {
 
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carousel-item" >
                     <div className="cards-wrapper">
                       {testimonialfour.map((item, key) => {
                         return (
@@ -437,7 +426,7 @@ export const Clients = () => {
 
                     </div>
                   </div>
-                  <div className="carousel-item">
+                  <div className="carousel-item"> 
                     <div className="cards-wrapper">
                       {testimonialfive.map((item, key) => {
                         return (
@@ -529,8 +518,9 @@ export const Clients = () => {
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
+              
 
-            </>
+           
 
           </div>
           <br />

@@ -1,6 +1,6 @@
-#carouselExampleControls .card {
+ .card {
     border: none;
-    border-radius: 0;
+    border-radius: 20px;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     margin: 10px;
 }
