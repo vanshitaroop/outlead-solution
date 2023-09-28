@@ -72,4 +72,75 @@
     .not_for_mobile{
         display: none;
     }
-}
+}.testo_img {
+    /* margin-left: 30px; */
+    width: 80%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+  }.client_img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding: 10px 0;
+    margin: 10px 0px;  */
+  }
+  #cards .card_content {
+   
+    margin: 20px 30px;
+    padding: 40px 30px;
+    background-color: #222327;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+  }
+ 
+  #cards .card_content .card__icon {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  #cards .card_content .card__icon img {
+    height: 75px;
+  }
+  
+  #cards .card_content h6 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  #cards .card_content ul li {
+    list-style: none;
+    padding: 3px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+  
+  #cards .card_content.selected::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -25px;
+    bottom: -30px;
+    background: url(https://i.imgur.com/WunqBPz.png);
+    background-position: right;
+    background-size: 10px;
+    z-index: -1;
+  }
+  
+  #cards .card_content.selected {
+    background-color: #161619;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  

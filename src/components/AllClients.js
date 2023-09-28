@@ -9,79 +9,162 @@ import React from "react";
 // import img8 from "../assets/img/client8.png";
 const client = [
   {
-    src: "Sources/images/hi-tech.png",
+    img: "Sources/images/logos/prepseed.png",
   },
   {
-    src: "Sources/images/prepseed.png",
+    img: "Sources/images/logos/chartered.png",
   },
   {
-    src: "Sources/images/ssrvm.png",
-  },
-  // {
-  //   src: "Sources/images/shiv-textile.png",
-  // },
-  {
-    src: "Sources/images/shivtex.png",
+    img: "Sources/images/logos/craftezy.png",
   },
   {
-    src: "Sources/images/bbgroyals.png",
+    img: "Sources/images/logos/shivtex.png",
   },
   {
-    src: "Sources/images/archbude.png",
+    img: "Sources/images/logos/rdt.png",
   },
   {
-    src: "Sources/images/bsquare.png",
-  },
-  {
-    src: "Sources/images/digvijay.png",
-  },
-  {
-    src: "Sources/images/cardinal.png",
-  },
-  {
-    src: "Sources/images/logo.png",
-  },
-  {
-    src: "Sources/images/logou.png",
-  },
-  {
-    src: "Sources/images/maak advisors.JPG",
-  },
-  {
-    src: "Sources/images/mastersoft-logo.webp",
-  },
-  {
-    src: "Sources/images/quickdraft.JPG",
-  },
-  {
-    src: "Sources/images/raywell studio.JPG",
-  },
-  {
-    src: "Sources/images/shinkan.JPG",
-  },
-  {
-    src: "Sources/images/ninefive.png",
+    img: "Sources/images/logos/cidroy.png",
   },
 
   {
-    src: "Sources/images/inspire.JPG",
+    img: "Sources/images/logos/adira.png",
   },
   {
-    src: "Sources/images/entroid.JPG",
+    img: "Sources/images/logos/drashti.png",
   },
   {
-    src: "Sources/images/enableX_logo.png",
+    img: "Sources/images/logos/FA.png",
   },
   {
-    src: "Sources/images/divya attires.JPG",
+    img: "Sources/images/logos/Bim.png",
   },
   {
-    src: "Sources/images/craftezy.JPG",
+    img: "Sources/images/cardinal.png",
   },
   {
-    src: "Sources/images/bluefire.JPG",
+    img: "Sources/images/logos/logo2.png",
   },
-  
+  {
+    img: "Sources/images/logos/64.png",
+  },
+  {
+    img: "Sources/images/logos/adrija.png",
+  },
+  {
+    img: "Sources/images/logos/age.png",
+  },
+  {
+    img: "Sources/images/logos/archbude.png",
+  }
+  ,
+  {
+    img: "Sources/images/logos/bbg.png",
+  },
+  {
+    img: "Sources/images/logos/beacon.png",
+  },
+  {
+    img: "Sources/images/logos/biochem.png",
+  },
+  {
+    img: "Sources/images/logos/bluefire.png",
+  },
+  {
+    img: "Sources/images/logos/Bsquare.png",
+  }
+  ,
+  {
+    img: "Sources/images/logos/hitech.png",
+  },
+  {
+    img: "Sources/images/logos/ninefive.png",
+  },
+  {
+    img: "Sources/images/logos/qutone.png",
+  },
+  {
+    img: "Sources/images/logos/book.png",
+  },
+  {
+    img: "Sources/images/logos/braincuber.png",
+  },
+  {
+    img: "Sources/images/logos/codertrails.png",
+  },
+  {
+    img: "Sources/images/logos/divya.png",
+  },
+  {
+    img: "Sources/images/logos/bsquare.png",
+  },
+  {
+    img: "Sources/images/logos/enable.png",
+  },
+  {
+    img: "Sources/images/logos/estrella.png"
+  },
+  {
+    img: "Sources/images/logos/finanvo.png",
+  },
+  {
+    img: "Sources/images/logos/gloline.png",
+  },
+  {
+    img: "Sources/images/logos/gramvaani.png",
+  },
+  {
+    img: "Sources/images/logos/h4healing.png",
+  },
+  {
+    img: "Sources/images/logos/happick.png",
+  },
+  {
+    img: "Sources/images/logos/inspire.png",
+  },
+  {
+    img: "Sources/images/logos/maak.png",
+  },
+  {
+    img: "Sources/images/logos/mandir.png",
+  },
+  {
+    img: "Sources/images/logos/mastersoft.png",
+  },
+  {
+    img: "Sources/images/logos/online.png",
+  },
+  {
+    img: "Sources/images/logos/pet.png",
+  },
+  {
+    img: "Sources/images/logos/poas.png",
+  },
+  {
+    img: "Sources/images/logos/savory.png",
+  },
+  {
+    img: "Sources/images/logos/scones.png",
+  },
+  {
+    img: "Sources/images/logos/shinkhan.png",
+  },
+  {
+    img: "Sources/images/logos/simplso.png",
+  },
+  {
+    img: "Sources/images/logos/softco.png",
+  },
+  {
+    img: "Sources/images/logos/techmyntra.png",
+  },
+  {
+    img: "Sources/images/logos/v.png",
+  },
+  {
+    img: "Sources/images/logos/valuemize.png",
+  }
+
 ];
 const AllClients = () => {
   return (
@@ -96,12 +179,14 @@ const AllClients = () => {
           {/* <h2 className="mb-sm">
                         Our <strong>Partners</strong>
                     </h2> */}
-          <div className="row mb-5 w-100">
+          <div className="row mb-5 w-100 client">
             {client.map((item, key) => {
               return (
                 <>
-                  <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6 m-2">
-                    <img src={item.src} alt="" className="w-100 client_img" />
+                  <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6  p-2 ">
+                    <img src={item.img} alt="" className="w-100 client_img" data-aos="fade-right"
+                      data-aos-offset="300"
+                      data-aos-easing="ease-in-sine" />
                   </div>
                 </>
               );
