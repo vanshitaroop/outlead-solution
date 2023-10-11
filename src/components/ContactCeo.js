@@ -6,13 +6,56 @@ import trycontact from "../assets/json/trycontact.json"
 export const ContactCeo = () => {
     return (
         <>
+            <div id='contact'>
+
+                <div className="row text-white text-center " style={{ backgroundColor: "#2e333b" }}>
+
+                    <div className="col back_col">
+                        <div className="container">
+                        <div className='about_content'>
+                            <h1 className='double_colour'>
+                                About <span>Outlead Solution</span>
+                            </h1>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div className="col back_col"></div>
+                    <div className="contact_cards ">
+
+                        <div className="row text-white text-center absolute">
+                            <div className="col  ">
+                                <Lottie animationData={profile} className='animate_img' />
+                                <div className='contact_content'>
+                                    <h2>Shanay Shah</h2>
+                                    <h6>For B2B</h6>
+                                    <button>Contact</button>
+                                </div>
+
+
+                            </div>
+                            <div className="col">
+                                <Lottie animationData={men2} className='animate_img' />
+                                <div className='contact_content'>
+                                    <h2>Vivek kankaria</h2>
+                                    <h6>For B2C</h6>
+                                    <button>Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
             {/* <div className='banner-contact'>    
             </div> */}
             {/* style={{ width: "80%", marginLeft: "120px" }} */}
-            <div className='lapttop-res-lott mobile-res-lott'>
+            {/* <div className='lapttop-res-lott mobile-res-lott'>
                 <Lottie animationData={trycontact} />
-            </div>
-            <div className='row' id ="contact-laptop">
+            </div> */}
+            {/* {/* <div className='row' id ="contact-laptop">
                 <div className='col-md-6 forCenter'>
                     <div class="card-container">
                         <div className='front'  >
@@ -35,11 +78,11 @@ export const ContactCeo = () => {
                                     </tr>
                                 </table>
                             </div>
-                            {/* <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button> */}
+                            <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button>
                         </div>
                         <div className="back">
                             <div class="card-body">
-                                {/* <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5> */}
+                                <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5>
                                 <p class="card-text mx-2" style={{fontSize:"15px",marginTop:"100px",textAlign:"left"}}>Lorem ipsum dolor sit amet, minim veniam, quis nostrud exercitation ex ea commodo consequat.  card's content.</p>
                                 <a href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' type="button" class="btn btn-outline-success" style={{border:"50%"}}><i className='fa fa-whatsapp' style={{textDecorat:"none"}}></i></a>
                             </div>
@@ -68,11 +111,11 @@ export const ContactCeo = () => {
                                     </tr>
                                 </table>
                             </div>
-                            {/* <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button> */}
+                            <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button>
                         </div>
                         <div className="back">
                             <div class="card-body">
-                                {/* <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5> */}
+                                <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5>
                                 <p class="card-text mx-2" style={{fontSize:"15px",marginTop:"100px",textAlign:"left"}}>Lorem ipsum dolor sit amet, minim veniam, quis nostrud exercitation ex ea commodo consequat.  card's content.</p>
                                 <a type="button" href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' class="btn btn-outline-success" style={{border:"50%"}}><i className='fa fa-whatsapp' style={{textDecorat:"none"}}></i></a>
                             </div>
@@ -80,7 +123,7 @@ export const ContactCeo = () => {
                     </div>
                 </div>
             </div>
-            {/* mobile responsive */}
+            mobile responsive
             <div className='row' id="contact-mobile">
                 <div className='col-md-6 forCenter'>
                     <div class="card-container">
@@ -104,11 +147,11 @@ export const ContactCeo = () => {
                                     </tr>
                                 </table>
                             </div>
-                            {/* <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button> */}
+                            <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button>
                         </div>
                         <div className="back">
                             <div class="card-body">
-                                {/* <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5> */}
+                                <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5>
                                 <p class="card-text mx-2" style={{fontSize:"15px",marginTop:"10px",textAlign:"left"}}>Lorem ipsum dolor sit amet, minim veniam, quis nostrud exercitation ex ea commodo consequat.  card's content.</p>
                                 <a href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' type="button" class="btn btn-outline-success" style={{border:"50%",height:"50%"}}><i className='fa fa-whatsapp' style={{textDecorat:"none"}}></i></a>
                             </div>
@@ -137,18 +180,18 @@ export const ContactCeo = () => {
                                     </tr>
                                 </table>
                             </div>
-                            {/* <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button> */}
+                            <button type="" className='btn' style={{radius:"50%"}}><i className='fa fa-whatsapp' style={{color:"white"}}></i></button>
                         </div>
                         <div className="back">
                             <div class="card-body">
-                                {/* <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5> */}
+                                <h5 class="card-title my-3" style={{fontSize:"25px"}}>Card title</h5>
                                 <p class="card-text mx-2" style={{fontSize:"15px",marginTop:"10px",textAlign:"left"}}>Lorem ipsum dolor sit amet, minim veniam, quis nostrud exercitation ex ea commodo consequat.  card's content.</p>
                                 <a type="button" href='https://api.whatsapp.com/send?phone=+919913382221&text=Hello' class="btn btn-outline-success" style={{borderRadius:"10%"}}><i className='fa fa-whatsapp' style={{textDecoration:"none"}}></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div> */}
 
         </>
     )

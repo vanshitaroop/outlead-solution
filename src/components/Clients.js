@@ -329,7 +329,7 @@ const testimonialsix = [
     img: "Sources/images/logos/divya.png",
   },
   {
-    img: "Sources/images/logos/bsquare.png",
+    img: "Sources/images/logos/Bsquare.png",
   },
   {
     img: "Sources/images/logos/enable.png",
@@ -496,7 +496,7 @@ export const Clients = () => {
             <Carousel interval={2000}>
               {images.map((image, index) => (
                 <Carousel.Item key={index}>
-                  <img src={image} alt={`Image ${index}`}   className="testo_img"/>
+                  <img src={image} alt={`Image ${index}`}  width={300} className="testo_img"/>
                   {/* <Carousel.Caption>
                     <h3>Slide {index + 1} label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

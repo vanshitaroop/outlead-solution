@@ -35,32 +35,36 @@
     transform: rotate(360deg);
   }
 }
-.about_content{
+
+.about_content {
   padding-top: 3rem;
 }
-.opacity{
+
+.opacity {
   font-size: 8rem;
   color: rgb(122, 122, 122);
   position: absolute;
   margin-top: -40px;
   opacity: 0.3;
   z-index: -2;
- 
+
 }
-.about_content .double_colour{
+
+.about_content .double_colour {
   color: rgb(255, 255, 255);
   font-size: 2.3rem;
   text-align: left;
 
 }
-.about_content .double_colour span{
+
+.about_content .double_colour span {
   color: orange;
   font-size: 2.3rem;
   text-align: left;
-  
+
 }
 
-.about_content .para{
+.about_content .para {
   color: white;
   font-weight: 500;
   padding: 1rem 0rem;
@@ -1106,6 +1110,53 @@ footer i.fa {
 }
 
 /* contactCeo css */
+
+
+#contact {
+  background-color: #2e333b;
+}
+
+#contact .back_col {
+
+  width: 50%;
+  height: 70vh;
+
+}
+
+#contact .absolute {
+
+  position: absolute;
+  left: 20%;
+
+  right: 20%;
+  bottom: 20%;
+}
+#contact .contact_content button{
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  padding: 7px 30px;
+  color: white;
+  margin-top: 15px;
+}
+#contact .absolute .col {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #43484f;
+  margin: 20px;
+  height: 50vh;
+}
+#contact .animate_img{
+  width: 50%;
+  margin: auto;
+
+}
+#contact .back_col:nth-child(2) {
+  background: url("../public/Sources/images/contact.jpg");
+  object-fit: contain;
+  width: 100%;
+  background-size: cover;
+}
+
 .back i {
   display: inline-block;
   border-radius: 60px;
@@ -1113,7 +1164,7 @@ footer i.fa {
   padding: 0.5em 0.6em;
 }
 
-.front,
+/* .front,
 .back {
   box-sizing: border-box;
   padding: 2rem;
@@ -1123,10 +1174,10 @@ footer i.fa {
   font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 2rem;
   color: #fff;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   text-align: center;
   background-color: #1f2124;
-}
+} */
 
 /* front side bg is green gradient */
 .front {
@@ -1134,9 +1185,9 @@ footer i.fa {
 }
 
 /* back side bg is orange gradient */
-.back {
+/* .back {
   background-color: #1f2124;
-}
+} */
 
 .card-container {
   position: relative;
@@ -1174,12 +1225,12 @@ footer i.fa {
   align-items: center;
 }
 
-.banner-contact {
+/* .banner-contact {
   height: 400px;
   width: 100%;
   background-image: url("/src//assets/img/test.jpg");
   opacity: 0.5;
-}
+} */
 
 .front h4 {
   font-family: "Poppins", sans-serif;
@@ -1228,6 +1279,7 @@ footer i.fa {
   font-size: 3.2rem;
   color: white;
 }
+
 .aboutHeading span {
   font-weight: 900;
   font-size: 3.2rem;
@@ -1242,15 +1294,15 @@ footer i.fa {
 
 .img_fluid {
   border-radius: 20px;
-padding: 0px 30px;
+  padding: 0px 30px;
   width: 100%;
-  
+
 }
 
 .about_two {
 
   background-color: #2e333b;
-  
+
 }
 
 /* ---------------------about section End --------------------------*/
@@ -4870,9 +4922,9 @@ aliceCarclient {
     margin: 2rem;
   }
 
-  #contact-laptop {
+  /* #contact-laptop {
     display: none;
-  }
+  } */
 
   /* .not-for-mobile {
     display: none;
@@ -4938,6 +4990,7 @@ aliceCarclient {
 } */
 
 @media (max-width: 700px) {
+
   /* .client {
     --bs-gutter-x: 1rem;
     --bs-gutter-y: 0;
@@ -4950,4 +5003,3 @@ aliceCarclient {
     margin-left: 30px;
   }
 }
-

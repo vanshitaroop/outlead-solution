@@ -80,13 +80,14 @@
     background-color: white;
     padding: 3px;
     border-radius: 10px;
-  }.client_img {
+  }
+  .client_img {
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: contain;
     background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 80px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* padding: 10px 0;
     margin: 10px 0px;  */
