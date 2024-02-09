@@ -113,7 +113,7 @@ export const Clients = () => {
           </span>
         </h1>
       </div>
-      <div className="container mb-5">
+      <div className="container">
         <div className="container not-for-mobile mt-5">
             <Swiper
               slidesPerView={1}
