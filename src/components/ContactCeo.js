@@ -53,7 +53,7 @@ export const ContactCeo = () => {
 
 
                 </div>
-                <div className='section-padding'></div>
+                {/* <div className='section-padding'></div>
                 <div style={{ padding: "20px" }}>
 
                     <div className="row text-white text-center">
@@ -77,7 +77,7 @@ export const ContactCeo = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
             {/* <div className='banner-contact'>    
