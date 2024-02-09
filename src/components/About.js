@@ -44,9 +44,9 @@ export const About = () => {
             <div className='about_content para'>
               <h1 className='double_colour' 
                >
-                Outlead <span>heading</span>
+                Outlead <span>Solution</span>
               </h1>
-              <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos consectetur sunt minima at, beatae quis magnam inventore autem placeat nam atque accusamus nisi ipsa non quo hic sint error numquam.</p>
+              <p >Still Preparing...</p>
               {/* <button type="button" class="GAQ">Text us! <i class="fa fa-paper-plane"></i></button> */}
             </div>
           </Col>

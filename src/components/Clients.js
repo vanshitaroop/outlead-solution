@@ -103,7 +103,7 @@ export const Clients = () => {
   return (
     <>
       <div class="nine not-for-mobile" style={{ marginTop: "100px" }}>
-        
+
         <h1>
           <span>
             <h2>Our Key Clients</h2>
@@ -115,32 +115,32 @@ export const Clients = () => {
       </div>
       <div className="container">
         <div className="container not-for-mobile mt-5">
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={30}
-              freeMode={true}
-              // pagination={{
-              //   clickable: true,
-              // }}
-              breakpoints={{
-                768: { // Breakpoint for mobile devices (screens with width >= 768px)
-                  slidesPerView: 3, // Use colon here instead of equals sign
-                  spaceBetween: 10, // Use colon here instead of equals sign
-                  // Add more breakpoints as needed
-                }
-              }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay, Pagination, Navigation, FreeMode]}
-              className="mySwiper">
-              {images.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img src={image} alt={`Slide ${index + 1}`} className="client-logo" />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            freeMode={true}
+            // pagination={{
+            //   clickable: true,
+            // }}
+            breakpoints={{
+              768: { // Breakpoint for mobile devices (screens with width >= 768px)
+                slidesPerView: 3, // Use colon here instead of equals sign
+                spaceBetween: 10, // Use colon here instead of equals sign
+                // Add more breakpoints as needed
+              }
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay, Pagination, Navigation, FreeMode]}
+            className="mySwiper">
+            {images.map((image, index) => (
+              <SwiperSlide key={index}>
+                <img src={image} alt={`Slide ${index + 1}`} className="client-logo" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
 
 
@@ -149,12 +149,12 @@ export const Clients = () => {
         <br />
         <br />
         <br />
-      
+
         <div style={{ margin: "auto", textAlign: "center" }}>
           <Link
             to="/AllClients"
             className="GAQ"
-            
+
           >
             Explore
           </Link>

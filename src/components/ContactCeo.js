@@ -8,7 +8,7 @@ export const ContactCeo = () => {
     return (
         <>
             <div id='contact' className='container'>
-            <div className='section-padding'></div>
+                <div className='section-padding'></div>
                 <LottieAnimation />
                 <div className="row text-white text-center ">
 
@@ -52,6 +52,31 @@ export const ContactCeo = () => {
                     </div>
 
 
+                </div>
+                <div className='section-padding'></div>
+                <div style={{ padding: "20px" }}>
+
+                    <div className="row text-white text-center">
+                        <div className="col-lg-6 col-md-6 col-sm-12">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.952570709344!2d72.55168987603646!3d23.025513616217033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e857566ad6311%3A0x94992a1be11cd6e1!2sOutLead%20Solutions!5e0!3m2!1sen!2sin!4v1707467755548!5m2!1sen!2sin"
+                                width="100%"
+                                height="450px"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                        <div className="col-lg-6 col-md-6 col-sm-12">
+                            <div className='contact-info'>
+                                <h2>Reach Us</h2>
+                                <a href="">901 Sears Tower, Near Panchvati Cross Road, Ahmedabad, Gujarat - 380009</a><br />
+                                <a href="(+91) 93286 83614">(+91) 93286 83614</a><br />
+                                <a href="">info@outleadsolutions.com</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
