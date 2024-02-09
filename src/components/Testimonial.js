@@ -6,10 +6,10 @@ export const Testimonial = () => {
   const items = [
     <div key={1} className="item center">
       <img src="Sources/images/1.png" width={100} alt="" />
-      <h2>ABHISHEK BANSAL</h2>
+      <h2 className="testomonial-heading">ABHISHEK BANSAL</h2>
       <span style={{ color: "orange" }}>SHIVTEX SPINNING PVT LTD</span>
       <p>DIRECTOR, CEO</p>
-      <p style={{ textAlign: "center", margin: "auto" }} className="para">
+      <p style={{ textAlign: "center", margin: "auto" }} className="para-testo">
         <i class="bi bi-quote" style={{ color: "orange" }}></i>When it comes to
         social media marketing there's plenty of fish in the sea. outlead
         solutions has helped me to engage customers and industry commentators
@@ -19,10 +19,10 @@ export const Testimonial = () => {
     </div>,
     <div key={2} className="item center">
       <img src="Sources/images/2.png" width={100} alt="" />
-      <h2>RAJ SHAH</h2>
+      <h2 className="testomonial-heading">RAJ SHAH</h2>
       <span style={{ color: "orange" }}>HITECH PROJECTS PVT LTD</span>
       <p>DIRECTOR</p>
-      <p style={{ textAlign: "center", margin: "auto" }} className="para">
+      <p style={{ textAlign: "center", margin: "auto" }} className="para-testo">
         <i class="bi bi-quote" style={{ color: "orange" }}></i> Consistency,
         competency and creativity are the three words I can think have when it
         comes to ‘OutLead solutions’. They are constantly willing to adapt and
@@ -33,10 +33,10 @@ export const Testimonial = () => {
     </div>,
     <div key={3} className="item center">
       <img src="Sources/images/3.png" width={100} alt="" />
-      <h2>SNEH SHAH</h2>
+      <h2 className="testomonial-heading">SNEH SHAH</h2>
       <span style={{ color: "orange" }}>TIDBIT SOLUTIONS</span>
       <p>CO-FOUNDER</p>
-      <p style={{ textAlign: "center", margin: "auto" }} className="para">
+      <p style={{ textAlign: "center", margin: "auto" }} className="para-testo">
         <i class="bi bi-quote" style={{ color: "orange" }}></i>I have worked
         with a couple of agencies in the past and none of them even come close
         to how impressed i am with OutLead solutions. The incredible amount of

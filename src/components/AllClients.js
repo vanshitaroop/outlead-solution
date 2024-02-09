@@ -95,9 +95,9 @@ const client = [
   {
     img: "Sources/images/logos/divya.png",
   },
-  {
-    img: "Sources/images/logos/bsquare.png",
-  },
+  // {
+  //   img: "Sources/images/logos/bsquare.png",
+  // },
   {
     img: "Sources/images/logos/enable.png",
   },

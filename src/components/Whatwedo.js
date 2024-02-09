@@ -36,11 +36,11 @@ export const Whatwedo = () => {
               </div> */}
               <div
                 class="row mb-4"
-                data-aos="zoom-out-left"
-                ata-aos-offset="500"
-                data-aos-duration="500"
+                // data-aos="fade-up"
+                // ata-aos-offset="500"
+                // data-aos-duration="500"
               >
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000">
                   <div class="card mx-3 mt-3">
                     <div class="card-body" style={{ position: "relative" }}>
                       <h4 class="card-title head">LinkedIn Outbound</h4>
@@ -60,7 +60,7 @@ export const Whatwedo = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 cards-mob">
+                <div class="col-sm-6 cards-mob" data-aos="fade-up" data-aos-duration="1000">
                   <div class="card mx-3 mt-3 ">
                     <div class="card-body">
                       <h4 class="card-title head">Cold Emailing</h4>
@@ -85,8 +85,8 @@ export const Whatwedo = () => {
               </div>
               {/* <div class="row my-2">
               </div> */}
-              <div class="row" data-aos="zoom-out-left">
-                <div class="col-sm-6 cards-mob ">
+              <div class="row" >
+                <div class="col-sm-6 cards-mob" data-aos="fade-up" data-aos-duration="1000">
                   <div class="card mx-3 mt-3">
                     <div class="card-body">
                       <h4 class="card-title head">Social Media Marketing</h4>
@@ -108,7 +108,7 @@ export const Whatwedo = () => {
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 cards-mob">
+                <div class="col-sm-6 cards-mob" data-aos="fade-up" data-aos-duration="1000">
                   <div class="card mx-3 mt-3">
                     <div class="card-body">
                       <h4 class="card-title head">

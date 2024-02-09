@@ -5,18 +5,40 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+
 export const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 150);
   const [index, setIndex] = useState(1);
+  // Check if there's a dark mode preference in localStorage, otherwise default to "dark-mode"
+  // Check if there's a dark mode preference in localStorage, otherwise default to "dark-mode"
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'light-mode' ? 'light-mode' : 'dark-mode'
+  );
+
+  const toggleClick = () => {
+    // Toggle darkMode value between "dark-mode" and "light-mode"
+    const newMode = darkMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    setDarkMode(newMode);
+    // Store the new mode preference in localStorage
+    localStorage.setItem('darkMode', newMode);
+  }
+
+  useEffect(() => {
+    // Update document body class whenever darkMode changes
+    document.body.className = darkMode;
+  }, [darkMode]);
+
   const toRotate = [
     "Lead Generation for B2B Businesses",
     "Branding & Marketing for B2C Businesses",
     "Logo Designing & Website Development",
     // "Social Media Marketing",
   ];
+
+
   const period = 2000;
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -61,23 +83,25 @@ export const Home = () => {
             <img src={bg} alt="" />
             <img src={elements} className="elements" alt="" />
           </div>
-          <div className="col-2 col-2-mob">
-            <h1>
+          <div className="col-2 col-2-mob" >
+            {/* <button onClick={toggleClick}><img src={img1} alt="" /></button> */}
+            <h1 className="hero-main-heading" data-aos="fade-left" data-aos-duration="1000">
               Outlead Solutions
-              <br />{" "}
+              <br />
               <span style={{ color: "orange" }}>Business Development </span>
               Agency
             </h1>
             {/* <h1> {`Hi I m vanshita, A `} <span className="wrap">{text}</span> </h1> */}
             <br />
             <div
-              style={{
-                backgroundColor: "white",
-                width: "fit-content",
-                borderRadius: "20px",
-              }}
+            className="typer-back"
+              // style={{
+              //   // backgroundColor: "white",
+              //   width: "fit-content",
+              //   borderRadius: "20px",
+              // }}
             >
-              <h3 className="mx-5" style={{ color: "black" }}>
+              <h3 className="p-3" style={{ color: "black" }} data-aos="fade-up" data-aos-duration="1000">
                 {" "}
                 {"We do "}{" "}
                 <span className="wrap" style={{ color: "orange" }}>
@@ -87,8 +111,8 @@ export const Home = () => {
             </div>
             <br />
             <br />
-            <Link to="/contactCeo" className="GAQ ">
-              Learn More
+            <Link to="/about" className="GAQ ">
+              Learn&nbsp;More
             </Link>
             <Link to="/contactCeo" className="GAQ-mob">
               Contact
@@ -96,6 +120,8 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      {/* <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button> */}
+      
     </>
   );
 };

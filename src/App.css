@@ -36,9 +36,9 @@
   }
 }
 
-.about_content {
+/* .about_content {
   padding-top: 3rem;
-}
+} */
 
 .opacity {
   font-size: 8rem;
@@ -50,8 +50,16 @@
 
 }
 
+p {
+  color: var(--para-color);
+}
+
+.slitely-space {
+  padding: 1rem 0rem;
+}
+
 .about_content .double_colour {
-  color: rgb(255, 255, 255);
+  color: var(--double-color);
   font-size: 2.3rem;
   text-align: left;
 
@@ -64,10 +72,29 @@
 
 }
 
-.about_content .para {
-  color: white;
-  font-weight: 500;
-  padding: 1rem 0rem;
+.about_content p {
+  color: var(--about-para);
+  width: 100%;
+
+  /* font-weight: 500; */
+  /* padding: 1rem 2rem; */
+}
+
+@media (max-width:600px) {
+
+  .opacity {
+    font-size: 5rem;
+    color: rgb(122, 122, 122);
+    position: absolute;
+    margin-top: -40px;
+    opacity: 0.3;
+    z-index: -2;
+
+  }
+
+  .about_content {
+    padding: 3rem 0.5rem;
+  }
 }
 
 /* Navbar css */
@@ -272,8 +299,71 @@
   font-family: "Poppins";
 }
 
-body {
+.light-mode {
+  background-color: rgb(254, 254, 254);
+  --home-main-heading: black;
+  --navbar-color-change: rgb(0, 0, 0);
+  --section-title: black;
+  --para-color: rgb(47, 47, 47);
+  --client-card-back: rgb(239, 239, 239);
+  --explore-btn: black;
+  --type-back: rgb(244, 244, 244);
+  --about-us-main-heading: black;
+  --about-para: rgb(39, 39, 39);
+  --double-color: black;
+  --title-section-title: rgb(0, 0, 0);
+  --testomonial-heading: black;
+  --testomonial-back: white;
+  --services-icon: black;
+  --choose-us-back: #f0f0f0;
+  --contact-card-back: #22252b;
+  --switch-back-color: rgb(238, 238, 238);
+  --see-more: black;
+  --about-back-outlead: rgb(239, 239, 239);
+  transition: 0.5s;
+}
+
+.dark-mode {
   background: #282c34;
+  --home-main-heading: rgb(255, 255, 255);
+  --navbar-color-change: rgb(255, 255, 255);
+  --section-title: white;
+  --para-color: rgb(195, 195, 195);
+  --client-card-back: rgb(255, 255, 255);
+  --explore-btn: rgb(0, 0, 0);
+  --type-back: rgb(255, 255, 255);
+  --about-us-main-heading: rgb(255, 255, 255);
+  --about-para: rgb(255, 255, 255);
+  --double-color: rgb(255, 255, 255);
+  --title-section-title: rgb(255, 255, 255);
+  --testomonial-heading: white;
+  --testomonial-back: #282c34;
+  --services-icon: white;
+  --choose-us-back: #22252b;
+  --contact-card-back: black;
+  --switch-back-color: #22252b;
+  --about-back-outlead: #22252b;
+  --see-more: white;
+  transition: 0.5s;
+
+}
+
+.testomonial-heading {
+  color: var(--testomonial-heading);
+}
+
+.navbar-change {
+  color: var(--navbar-color-change);
+
+}
+
+/* body {
+  background: #282c34;
+} */
+
+.section-padding {
+  padding: 3rem 0rem;
+
 }
 
 /* img {
@@ -399,11 +489,15 @@ nav ul li a.active {
   font-family: "Poopins sans-serief";
 }
 
+.hero-main-heading {
+  color: var(--home-main-heading);
+}
+
 .hero {
   width: 100%;
   margin-bottom: 80px;
-  background: linear-gradient(45deg, #a700ff, #4d19db);
-  background: #282c34;
+  /* background: linear-gradient(45deg, #a700ff, #4d19db);
+  background: #282c34; */
   padding-left: 4%;
   padding-right: 4%;
   box-sizing: border-box;
@@ -421,6 +515,10 @@ nav ul li a.active {
   border: 1px solid orange;
   padding: 10px 30px;
   border-radius: 5px;
+  color: var(--explore-btn);
+  text-decoration: none;
+  background-color: #EFEFEF;
+  /* width: 100%; */
 }
 
 .GAQ:hover {
@@ -674,7 +772,7 @@ a{
 .nine h1 span {
   margin-top: 5px;
   font-size: 15px;
-  color: #fff;
+  color: var(--section-title);
   word-spacing: 1px;
   font-weight: normal;
   letter-spacing: 2px;
@@ -837,6 +935,17 @@ a{
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   word-wrap: break-word;
+}
+
+#content {
+  padding: 10px 20px
+}
+
+@media (max-width:900px) {
+  #content {
+    padding: 0px 0px;
+    margin-top: 40px
+  }
 }
 
 /* Testimonial css */
@@ -1113,7 +1222,7 @@ footer i.fa {
 
 
 #contact {
-  background-color: #2e333b;
+  background-color: transparent;
 }
 
 #contact .back_col {
@@ -1123,6 +1232,7 @@ footer i.fa {
 
 }
 
+/* 
 #contact .absolute {
 
   position: absolute;
@@ -1130,8 +1240,8 @@ footer i.fa {
 
   right: 20%;
   bottom: 20%;
-}
-#contact .contact_content button{
+} */
+#contact .contact_content button {
   background-color: orange;
   border-radius: 5px;
   border: none;
@@ -1139,17 +1249,19 @@ footer i.fa {
   color: white;
   margin-top: 15px;
 }
-#contact .absolute .col {
+
+/* #contact .absolute .col {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #43484f;
   margin: 20px;
   height: 50vh;
-}
-#contact .animate_img{
-  width: 50%;
+} */
+#contact .animate_img {
+  width: 30%;
   margin: auto;
 
 }
+
 #contact .back_col:nth-child(2) {
   background: url("../public/Sources/images/contact.jpg");
   object-fit: contain;
@@ -1277,7 +1389,7 @@ footer i.fa {
 .aboutHeading {
   font-weight: 900;
   font-size: 3.2rem;
-  color: white;
+  color: var(--about-us-main-heading);
 }
 
 .aboutHeading span {
@@ -1301,7 +1413,7 @@ footer i.fa {
 
 .about_two {
 
-  background-color: #2e333b;
+  background-color: var(--about_two);
 
 }
 
@@ -2127,7 +2239,7 @@ a.text-dark:focus {
 
 .btn-outline {
   border-color: #d7d5e9;
-  color: #fff;
+  color: var(--see-more);
 }
 
 .btn-outline:hover {
@@ -2771,12 +2883,16 @@ a.text-dark:focus {
   position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #fff;
+
   overflow: hidden;
 }
 
 .page-section p {
-  color: #898798;
+  color: var(--para-color);
+}
+
+.services-back-theme {
+  background-color: var(--page-section-back);
 }
 
 .page-banner {
@@ -2872,7 +2988,8 @@ a.text-dark:focus {
 
 .title-section {
   max-width: 450px;
-  color: #fff;
+  color: var(--title-section-title);
+
   font-weight: 600;
 }
 
@@ -4357,8 +4474,7 @@ hr {
   }
 
   #intro,
-  #section_4,
-  #contact {
+  #section_4 {
     background-color: #99ccff;
   }
 
@@ -4887,10 +5003,10 @@ hr {
 .aliceCar {
   padding: 20px;
   padding-top: 90px;
-  background-color: white;
+  background-color: var(--testomonial-back);
 }
 
-aliceCarclient {
+.aliceCarclient {
   padding: 20px;
   padding-top: 90px;
   background-color: #282c34;
@@ -4979,9 +5095,9 @@ aliceCarclient {
   filter: none;
 }
 
-.para {
+/* .para {
   width: 600px;
-}
+} */
 
 
 /* .client {
@@ -5001,5 +5117,81 @@ aliceCarclient {
 
   .testo_img {
     margin-left: 30px;
+  }
+}
+
+.contact-card {
+  background-color: var(--contact-card-back);
+  margin: 20px;
+  padding: 30px 0px;
+  border-radius: 6px;
+  border: 1px solid gray;
+}
+
+.contact-card:hover .contact_content h2 {
+  color: orange;
+}
+
+.theme-switch-btn {
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  background-color: var(--switch-back-color);
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.theme-switch-btn img {
+  width: 40px;
+}
+
+.typer-back {
+  background-color: var(--type-back);
+  width: fit-content;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.para-testo {
+  width: 600px;
+  color: var(--para-color);
+}
+
+@media (max-width:600px) {
+  .para-testo {
+    width: 100%;
+  }
+}
+
+.fa-money-check-alt:before {
+  content: "\f53d";
+  color: var(--services-icon);
+}
+
+.fa-clock:before {
+  content: "\f017";
+  color: var(--services-icon);
+}
+
+.fa-signal:before {
+  content: "\f012";
+  color: var(--services-icon);
+}
+
+#choose-us-section {
+  background-color: var(--choose-us-back);
+}
+
+#outlead-about {
+  background-color: var(--about-back-outlead);
+  padding: 0px 20px;
+}
+
+@media (max-width:600px) {
+  #outlead-about {
+    background-color: var(--about-back-outlead);
+    padding: 0px 20px;
   }
 }

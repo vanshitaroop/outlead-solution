@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+
 import {
   MDBContainer,
   MDBNavbar,
@@ -19,11 +20,14 @@ import { Link } from 'react-router-dom';
 import logo from "../assets/img/Outleadlogo.png"
 import { Navbar, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import img1 from "../assets/img/bulb-on.png"
+
 export function Navbartry() {
   const [showBasic, setShowBasic] = useState(false);
-  function handleClick(){
+  function handleClick() {
     setShowBasic(false);
   }
+ 
   return (
     <MDBNavbar expand='lg' dark bgColor='dark'>
       <MDBContainer fluid>
@@ -73,13 +77,19 @@ export function Navbartry() {
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            <MDBNavbarItem>
+            {/* <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/blogs">
                   <Nav.Link onClick={handleClick}>Blogs</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
-            </MDBNavbarItem>
+            </MDBNavbarItem> */}
+            {/* <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' to="">
+               
+              </MDBNavbarLink>
+            </MDBNavbarItem> */}
+            
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>

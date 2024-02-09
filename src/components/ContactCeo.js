@@ -2,15 +2,16 @@ import React from 'react'
 import Lottie from "lottie-react";
 import profile from "../assets/json/profile.json"
 import men2 from "../assets/json/men1.json"
-import trycontact from "../assets/json/trycontact.json"
+import LottieAnimation from './LottieJson';
+
 export const ContactCeo = () => {
     return (
         <>
-            <div id='contact'>
+            <div id='contact' className='container'>
+                <LottieAnimation />
+                <div className="row text-white text-center ">
 
-                <div className="row text-white text-center " style={{ backgroundColor: "#2e333b" }}>
-
-                    <div className="col back_col">
+                    {/* <div className="col back_col">
                         <div className="container">
                         <div className='about_content'>
                             <h1 className='double_colour'>
@@ -20,26 +21,30 @@ export const ContactCeo = () => {
                         </div>
                         </div>
                     </div>
-                    <div className="col back_col"></div>
+                    <div className="col back_col"></div> */}
                     <div className="contact_cards ">
 
-                        <div className="row text-white text-center absolute">
-                            <div className="col  ">
-                                <Lottie animationData={profile} className='animate_img' />
-                                <div className='contact_content'>
-                                    <h2>Shanay Shah</h2>
-                                    <h6>For B2B</h6>
-                                    <button>Contact</button>
+                        <div className="row text-white text-center">
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className='contact-card'>
+                                    <Lottie animationData={profile} className='animate_img' />
+                                    <div className='contact_content'>
+                                        <h2>Shanay Shah</h2>
+                                        <h6 style={{ color: "#8d8d8d" }}>For B2B</h6>
+                                        <button><a href="tel:+91 80008 12325" style={{ textDecoration: "none", color: "white" }}>Contact</a></button>
+                                    </div>
+
+
                                 </div>
-
-
                             </div>
-                            <div className="col">
-                                <Lottie animationData={men2} className='animate_img' />
-                                <div className='contact_content'>
-                                    <h2>Vivek kankaria</h2>
-                                    <h6>For B2C</h6>
-                                    <button>Contact</button>
+                            <div className="col-lg-6 col-md-6 col-sm-12">
+                                <div className='contact-card'>
+                                    <Lottie animationData={men2} className='animate_img' />
+                                    <div className='contact_content'>
+                                        <h2>Vivek kankaria</h2>
+                                        <h6 style={{ color: "#8d8d8d" }}>For B2C</h6>
+                                        <button><a href="tel:+91 99133 82221" style={{ textDecoration: "none", color: "white" }}>Contact</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
