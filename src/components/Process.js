@@ -23,8 +23,8 @@ export const Process = () => {
           <div className='col-lg-6 col-md-12'    >
             <div className='content' id='content' data-aos="fade-up" data-aos-duration="1000">
               <h2 style={{ color: "orange" }}>Why to Choose us??</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
-              <p>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+              <p>Outlead Solutions delivers unparalleled Graphics Design and Websites Development expertise, crafting visually stunning and highly functional websites tailored to your business needs. </p>
+              <p>Our team is committed to delivering excellence, innovation, and personalized service, ensuring your online presence stands out in today's competitive digital landscape. Choose Outlead Solutions for unmatched results</p>
             </div>
           </div>
         </div>

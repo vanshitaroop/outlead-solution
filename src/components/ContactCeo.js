@@ -8,6 +8,7 @@ export const ContactCeo = () => {
     return (
         <>
             <div id='contact' className='container'>
+            <div className='section-padding'></div>
                 <LottieAnimation />
                 <div className="row text-white text-center ">
 

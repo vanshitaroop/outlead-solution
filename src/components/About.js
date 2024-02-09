@@ -17,6 +17,7 @@ export const About = () => {
   return (
 
     <div className='aboutpage  aboutpage-mob'>
+      <div className='section-padding'></div>
       <div className='container'>
 
         <Row xs={1} md={1} lg={2}>
