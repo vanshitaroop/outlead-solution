@@ -38,7 +38,7 @@ const images = [
   'Sources/images/logos/FA.png',
   'Sources/images/logos/Bim.png',
   'Sources/images/cardinal.png',
-  'Sources/images/logos/logo2.png',
+  'Sources/images/logos/digvijay.png',
   'Sources/images/logos/64.png',
   'Sources/images/logos/adrija.png',
   'Sources/images/logos/age.png',
