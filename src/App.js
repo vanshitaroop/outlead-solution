@@ -18,23 +18,7 @@ import AllClients from './components/AllClients';
 // import { Navbartry } from './components/Navbartry';
 import img1 from "./assets/img/bulb-on.png"
 function App() {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('darkMode') === 'light-mode' ? 'light-mode' : 'dark-mode'
-  );
-
-  const toggleClick = () => {
-    // Toggle darkMode value between "dark-mode" and "light-mode"
-    const newMode = darkMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
-    setDarkMode(newMode);
-    // Store the new mode preference in localStorage
-    localStorage.setItem('darkMode', newMode);
-  }
-
-  useEffect(() => {
-    // Update document body class whenever darkMode changes
-    document.body.className = darkMode;
-  }, [darkMode]);
-
+  
   return (
     <div className="App">
       <Navbartry/>
@@ -48,7 +32,7 @@ function App() {
           <Route exact path="/AllClients" element={<AllClients/>}/>
 
         </Routes>
-      <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
+      
       <Footer/>
     </div>
   );

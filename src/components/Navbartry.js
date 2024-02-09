@@ -27,9 +27,25 @@ export function Navbartry() {
   function handleClick() {
     setShowBasic(false);
   }
- 
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem('darkMode') === 'light-mode' ? 'light-mode' : 'dark-mode'
+  );
+
+  const toggleClick = () => {
+    // Toggle darkMode value between "dark-mode" and "light-mode"
+    const newMode = darkMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    setDarkMode(newMode);
+    // Store the new mode preference in localStorage
+    localStorage.setItem('darkMode', newMode);
+  }
+
+  useEffect(() => {
+    // Update document body class whenever darkMode changes
+    document.body.className = darkMode;
+  }, [darkMode]);
+
   return (
-    <MDBNavbar expand='lg' dark bgColor='dark'>
+    <MDBNavbar expand='lg' dark bgColor='dark' id='navbar'>
       <MDBContainer fluid>
         <Link to={"/"}> <img
           src={logo}
@@ -84,11 +100,11 @@ export function Navbartry() {
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem> */}
-            {/* <MDBNavbarItem>
+            <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
-               
+               <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
               </MDBNavbarLink>
-            </MDBNavbarItem> */}
+            </MDBNavbarItem>
             
           </MDBNavbarNav>
         </MDBCollapse>
