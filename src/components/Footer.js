@@ -22,7 +22,7 @@ export const Footer = () => {
                             <br />
                             <br />
                             <p class="menu">
-                                <Link to="/">Home</Link>
+                                <Link to="/AllClients">Clients</Link>
                                 <Link to="/about">About</Link>
                                 <Link to="/contactCeo">Contact</Link>
                                 <Link to="/services">Service</Link>
