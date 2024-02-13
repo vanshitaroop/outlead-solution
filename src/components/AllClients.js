@@ -44,7 +44,7 @@ const client = [
     img: "Sources/images/cardinal.png",
   },
   {
-    img: "Sources/images/logos/logo2.png",
+    img:   'Sources/images/logos/digvijay.png',
   },
   {
     img: "Sources/images/logos/64.png",
