@@ -6,6 +6,14 @@ import mainImage from "../assets/img/graphic.gif"
 // import img1 from "../assets/img/gifs/"
 import img2 from "../assets/img/outlead4.gif"
 import LottieAnimationtwo from './Lottiejson2';
+import { BsLinkedin } from "react-icons/bs";
+import img1 from "../assets/img/icons/outbonding.gif"
+import img3 from "../assets/img/icons/discount-unscreen.gif"
+import img4 from "../assets/img/icons/computer-unscreen.gif"
+import img5 from "../assets/img/icons/responsive-design-unscreen.gif" 
+import img6 from "../assets/img/icons/email-unscreen.gif"
+import img7 from "./../assets/img/icons/copywriting-unscreen.gif"
+import img8 from "../assets/img/icons/notebook-unscreen.gif"
 
 export const Services = () => {
   const [selectedCard, setSelectedCard] = useState(1);
@@ -98,7 +106,7 @@ export const Services = () => {
                 <div className={`card_content  ${selectedCard === 0 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(0)}>
                   <div className="card__icon">
-                    <img src="https://i.imgur.com/93ei2SI.png" alt="icon.png" />
+                    <img src={img1} alt="" />
                   </div>
                   <h6>LINKEDIN OUTBOUND</h6>
                   <ul>
@@ -116,11 +124,13 @@ export const Services = () => {
                 <div className={`card_content  ${selectedCard === 6 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(6)}>
                   <div className="card__icon">
-                    <img src="" alt="icon.png" />
+                    <img src={img3} alt="icon.png" />
                   </div>
                   <h6>B2B LEAD GENERATION</h6>
-                  <p className='text-white'>
-                    OutLead Solutions provides Lead Generation service which has unique process itself and can be useful to fulfil your need for business goal.</p>
+                  <ul>
+                  <li className='text-white'>
+                    OutLead Solutions provides Lead Generation service which has unique process itself and can be useful to fulfil your need for business goal.</li>
+                    </ul>
                   {/* <ul>
                     <li>Digital Branding</li>
                     <li>Web & Mobile Sites</li>
@@ -136,7 +146,7 @@ export const Services = () => {
                 <div className={`card_content  ${selectedCard === 1 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(1)}>
                   <div className="card__icon">
-                    <img src={img2} alt="icon.png" />
+                    <img src={img4} alt="icon.png" />
                   </div>
                   <h6>UI-UX DESIGN</h6>
                   <ul>
@@ -154,10 +164,12 @@ export const Services = () => {
                 <div className={`card_content ${selectedCard === 2 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(2)}>
                   <div className="card__icon">
-                    <img src="https://i.imgur.com/dbngiB3.png" alt="icon.png" />
+                    <img src={img5} alt="icon.png" />
                   </div>
                   <h6>WEB DEVELOPMENT</h6>
-                  <p className='text-white'>Outlead Solutions also improvises your online visibility by using website development which can be further used to explore your work by your customers.</p>
+                  <ul>
+                  <li className='text-white'>Outlead Solutions also improvises your online visibility by using website development which can be further used to explore your work by your customers.</li>
+                  </ul>
                   {/* <ul>
                     <li>Custom Platform</li>
                     <li>Back-End Executions</li>
@@ -173,7 +185,7 @@ export const Services = () => {
                 <div className={`card_content ${selectedCard === 3 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(3)}>
                   <div className="card__icon">
-                    <img src="https://i.imgur.com/dbngiB3.png" alt="icon.png" />
+                    <img src={img6} alt="icon.png" />
                   </div>
                   <h6>Cold Emailing</h6>
                   <ul>
@@ -192,10 +204,12 @@ export const Services = () => {
                 <div className={`card_content ${selectedCard === 4 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(4)}>
                   <div className="card__icon">
-                    <img src="https://i.imgur.com/dbngiB3.png" alt="icon.png" />
+                    <img src={img7} alt="icon.png" />
                   </div>
                   <h6>Social Media Marketing</h6>
-                  <p className='text-white'>OutLead Solutions further harmonizes the unique tool for Lead Generation with careful and meticulously planned social media marketing techniques.</p>
+                  <ul>
+                  <li className='text-white'>OutLead Solutions further harmonizes the unique tool for Lead Generation with careful and meticulously planned social media marketing techniques.</li>
+                  </ul>
                   {/* <ul>
                     <li>Custom Platform</li>
                     <li>Back-End Executions</li>
@@ -211,11 +225,11 @@ export const Services = () => {
                 <div className={`card_content ${selectedCard === 5 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(5)}>
                   <div className="card__icon">
-                    <img src="https://i.imgur.com/dbngiB3.png" alt="icon.png" />
+                    <img src={img8} alt="icon.png"  />
                   </div>
                   <h6>Content Writing</h6>
-                  <p className='text-white'>
-                    OutLead Solutions offers the option of Content Writing and Posting for instances where sharing of detailed information is vital and pictures/graphics cannot do enough justice to the data in hand.</p>
+                  <ul><li>
+                    OutLead Solutions offers the option of Content Writing and Posting for instances where sharing of detailed information is vital and pictures/graphics cannot do enough justice to the data in hand.</li></ul>
                   {/* <ul>
                     <li>Custom Platform</li>
                     <li>Back-End Executions</li>

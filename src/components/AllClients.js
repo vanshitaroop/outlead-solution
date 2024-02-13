@@ -1,4 +1,5 @@
 import React from "react";
+
 // import img1 from "../assets/img/Hitechlogo.png";
 // import img2 from "../assets/img/client3.png";
 // import img3 from "../assets/img/client3.png";
@@ -169,6 +170,8 @@ const client = [
 const AllClients = () => {
   return (
     <>
+    <div className="section_padding"></div>
+    <div className="section_padding"></div>
       <div className="container section_padding">
         <div>
           <h1 className="heading_style">Our Partners</h1>

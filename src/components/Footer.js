@@ -10,13 +10,13 @@ export const Footer = () => {
                         <div class="col-md-12 text-center">
                             {/* <h2 class="footer-heading"><a href="#" class="logo">Outlead Solutions</a></h2> */}
                             <Link to={"/"}> <img
-                                src="https://outleadsolutions.com/assets/images/full-logo.png"
-                                height='100'
+                                src={logo}
+                                height='130'
                                 alt=''
                                 loading='lazy'
                                 style={{
                                     backgroundColor: "white",
-                                    padding: "10px 0px", borderRadius: "5px"
+                                    padding: "10px 10px", borderRadius: "5px"
                                 }}
                             /></Link>
                             <br />

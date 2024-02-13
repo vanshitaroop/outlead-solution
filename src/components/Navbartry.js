@@ -74,8 +74,8 @@ export function Navbartry() {
             </MDBNavbarItem>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
-                <LinkContainer to="/">
-                  <Nav.Link onClick={handleClick}>Home</Nav.Link>
+                <LinkContainer to="/AllClients">
+                  <Nav.Link onClick={handleClick}>Clients</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem>

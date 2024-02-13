@@ -28,7 +28,7 @@ export const ContactCeo = () => {
                         <div className="row text-white text-center">
                             <div className="col-lg-6 col-md-6 col-sm-12">
                                 <div className='contact-card'>
-                                    <Lottie animationData={profile} className='animate_img' />
+                                    <Lottie animationData={men2} className='animate_img' />
                                     <div className='contact_content'>
                                         <h2>Shanay Shah</h2>
                                         <h6 style={{ color: "#8d8d8d" }}>For B2B</h6>
