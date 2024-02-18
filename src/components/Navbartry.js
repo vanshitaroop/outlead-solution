@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect,useRef  } from 'react';
 
 import {
   MDBContainer,
@@ -24,6 +24,7 @@ import img1 from "../assets/img/bulb-on.png"
 
 export function Navbartry() {
   const [showBasic, setShowBasic] = useState(false);
+  const navbarRef = useRef(null);
   function handleClick() {
     setShowBasic(false);
   }
@@ -43,9 +44,24 @@ export function Navbartry() {
     // Update document body class whenever darkMode changes
     document.body.className = darkMode;
   }, [darkMode]);
+  useEffect(() => {
+    // Function to close the navbar when clicking outside of it
+    function handleClickOutside(event) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setShowBasic(false);
+      }
+    }
 
+    // Add event listener when component mounts
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   return (
-    <MDBNavbar expand='lg' dark bgColor='dark' id='navbar'>
+    <MDBNavbar expand='lg' dark bgColor='dark' id='navbar' ref={navbarRef}>
       <MDBContainer fluid>
         <Link to={"/"}> <img
           src={logo}
@@ -102,10 +118,10 @@ export function Navbartry() {
             </MDBNavbarItem> */}
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
-               <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
+                <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
               </MDBNavbarLink>
             </MDBNavbarItem>
-            
+
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBContainer>
