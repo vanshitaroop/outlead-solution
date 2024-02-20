@@ -9,10 +9,18 @@ import img2 from "../assets/img/about.gif";
 // import CssBaseline from '@mui/material/CssBaseline';
 import LottieAnimation from './Lottiejson3';
 import LottieAnimation2 from './LottieJson4';
-
+import { Button, Modal } from 'antd';
 
 
 export const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
 
@@ -33,20 +41,30 @@ export const About = () => {
               through tailored strategies and captivating
               campaigns.
             </p>
-            <button type="button" className="GAQ" >Text us! <i className="fa fa-paper-plane"></i></button>
+
+            {/* <div id="about-us-modal"> */}
+              <Modal title={null} open={isModalOpen} header={null} onCancel={handleCancel} footer={null}>
+                <br />  <br />
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                  <a href="mailto:admin@outleadsolutions.com" class="btn btn-primary mr-3">E-Mail</a>
+                  <a href="tel:+91 99133 82221" class="btn btn-outline mx-2" >Contact</a>
+                </div>  <br />
+              </Modal>
+            {/* </div> */}
+            <button type="button" onClick={showModal} className="GAQ" >Text us! <i className="fa fa-paper-plane"></i></button>
           </Col>
         </Row>
         {/* <div className='section-padding'></div> */}
         <Row xs={1} md={1} lg={2} className='pt-5 mt-5 pb-5 about_two' id='outlead-about'>
 
-        
+
           <Col style={{ display: "flex", alignItems: "center" }}>
             <div className='about_content para'>
-              <h1 className='double_colour' 
-               >
+              <h1 className='double_colour'
+              >
                 Outlead <span>Solution</span>
               </h1>
-              <p >Still Preparing...</p>
+              <p>Still Preparing...</p>
               {/* <button type="button" class="GAQ">Text us! <i class="fa fa-paper-plane"></i></button> */}
             </div>
           </Col>
@@ -66,13 +84,13 @@ export const About = () => {
               <Col>
                 <div >
 
-                  <LottieAnimation2/>
+                  <LottieAnimation2 />
                   {/* <img src={img2} alt="" className='w-100 p-3 m-auto' style={{ padding: "0px 30px" }} /> */}
                 </div>
               </Col>
               <Col>
                 <div className='about_content' data-aos="fade-bottom"
-                data-aos-duration="1000">
+                  data-aos-duration="1000">
                   <p>
                     The onset of the global pandemic has drastically changed the way businesses survive and thrive.
                     The founders of OutLead took this challenge as an opportunity with one simple goal - to reconstruct
@@ -98,7 +116,7 @@ export const About = () => {
         </div>
       </div>
 
-    </div>
+    </div >
 
   )
 }

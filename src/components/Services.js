@@ -15,6 +15,7 @@ import img6 from "../assets/img/icons/email-unscreen.gif"
 import img7 from "./../assets/img/icons/copywriting-unscreen.gif"
 import img8 from "../assets/img/icons/notebook-unscreen.gif"
 
+
 export const Services = () => {
   const [selectedCard, setSelectedCard] = useState(1);
 
@@ -36,8 +37,8 @@ export const Services = () => {
                       <h2 class="title-section">We're <span class="marked">ready to</span> Serve you with best</h2>
                       <div class="divider"></div>
                       <p class="mb-5">We provide marketing services to startups & small business to looking <br /> for partner for their digital media, design & dev lead generation & communication.</p>
-                      <a href="#" class="btn btn-primary mr-3">More Details</a>
-                      <a href="#" class="btn btn-outline mx-2" >See pricing</a>
+                      {/* <a href="#" class="btn btn-primary mr-3">More Details</a>
+                      <a href="#" class="btn btn-outline mx-2" >See pricing</a> */}
                     </div>
                   </div>
                   <div class="col-lg-6 py-3">
@@ -46,6 +47,7 @@ export const Services = () => {
                     </div>
                   </div>
                 </div>
+              
               </div>
             </div>
 

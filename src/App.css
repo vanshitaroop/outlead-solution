@@ -329,6 +329,7 @@ p {
   --see-more: black;
   --about-back-outlead: rgb(239, 239, 239);
   transition: 0.5s;
+  --back-color:rgb(255, 255, 255);
 }
 
 .dark-mode {
@@ -352,6 +353,7 @@ p {
   --switch-back-color: #22252b;
   --about-back-outlead: #22252b;
   --see-more: white;
+  --back-color:black;
   transition: 0.5s;
 
 }
@@ -5208,4 +5210,29 @@ hr {
 }
 .contact-info{
   background-color:#22252b;
+}
+
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-modal .ant-modal-content{
+  background-color: var(--back-color);
+}
+/* Width */
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange; /* color of the scrollbar handle */
+  transition: .3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white; /* color of the scrollbar handle on hover */
+  transition: .3s;
 }
