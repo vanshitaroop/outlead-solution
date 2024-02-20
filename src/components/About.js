@@ -51,7 +51,7 @@ export const About = () => {
                 </div>  <br />
               </Modal>
             {/* </div> */}
-            <button type="button" onClick={showModal} className="GAQ" >Text us! <i className="fa fa-paper-plane"></i></button>
+            <button type="button" onClick={showModal} className="GAQ" >Reach Out To Us! <i className="fa fa-paper-plane"></i></button>
           </Col>
         </Row>
         {/* <div className='section-padding'></div> */}
