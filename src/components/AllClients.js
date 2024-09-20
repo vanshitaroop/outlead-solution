@@ -164,32 +164,31 @@ const client = [
     img: "Sources/images/logos/valuemize.png",
   },
   {
-    img: "Sources/images/logos/KhushiLogo.jpg",
+    img: "Sources/images/logos/KhushiLogo.JPG",
   },
   {
-    img: "Sources/images/logos/Neutec.jpg",
+    img: "Sources/images/logos/Neutec.JPG",
   },
   {
-    img: "Sources/images/logos/FR.jpg",
+    img: "Sources/images/logos/FR.JPG",
   },
   {
-    img: "Sources/images/logos/Divya.jpg",
+    img: "Sources/images/logos/Divya.JPG",
   },
   {
-    img: "Sources/images/logos/TDM.jpg",
-  },
- 
-  {
-    img: "Sources/images/logos/Vebbbeeeee.jpg",
+    img: "Sources/images/logos/TDM.JPG",
   },
   {
-    img: "Sources/images/logos/SUMS.jpg",
+    img: "Sources/images/logos/Vebbbeeeee.JPG",
   },
   {
-    img: "Sources/images/logos/DYD.jpg",
+    img: "Sources/images/logos/SUMS.JPG",
   },
   {
-    img: "Sources/images/logos/ClarityComm.jpg",
+    img: "Sources/images/logos/DYD.JPG",
+  },
+  {
+    img: "Sources/images/logos/ClarityComm.JPG",
   },
 
 
