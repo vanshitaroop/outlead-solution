@@ -93,9 +93,7 @@ const client = [
   {
     img: "Sources/images/logos/codertrails.png",
   },
-  {
-    img: "Sources/images/logos/divya.png",
-  },
+  
   // {
   //   img: "Sources/images/logos/bsquare.png",
   // },
@@ -164,7 +162,36 @@ const client = [
   },
   {
     img: "Sources/images/logos/valuemize.png",
-  }
+  },
+  {
+    img: "Sources/images/logos/KhushiLogo.jpg",
+  },
+  {
+    img: "Sources/images/logos/Neutec.jpg",
+  },
+  {
+    img: "Sources/images/logos/FR.jpg",
+  },
+  {
+    img: "Sources/images/logos/Divya.jpg",
+  },
+  {
+    img: "Sources/images/logos/TDM.jpg",
+  },
+ 
+  {
+    img: "Sources/images/logos/Vebbbeeeee.jpg",
+  },
+  {
+    img: "Sources/images/logos/SUMS.jpg",
+  },
+  {
+    img: "Sources/images/logos/DYD.jpg",
+  },
+  {
+    img: "Sources/images/logos/ClarityComm.jpg",
+  },
+
 
 ];
 const AllClients = () => {
