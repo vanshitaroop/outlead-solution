@@ -190,6 +190,63 @@ const client = [
   {
     img: "Sources/images/logos/ClarityComm.JPG",
   },
+  {
+    img: "Sources/images/logos/AB Mittal.JPG",
+  },
+  {
+    img: "Sources/images/logos/EximiusVenture.JPG",
+  },
+  {
+    img: "Sources/images/logos/Fiable.JPG",
+  },
+  {
+    img: "Sources/images/logos/yellowspot.JPG",
+  },
+  {
+    img: "Sources/images/logos/Tribalvedda.JPG",
+  },
+  {
+    img: "Sources/images/logos/Growth91.JPG",
+  },
+  {
+    img: "Sources/images/logos/ITZEL.JPG",
+  },
+  {
+    img: "Sources/images/logos/Tringular.JPG",
+  },
+  {
+    img: "Sources/images/logos/Orget.JPG",
+  },
+  {
+    img: "Sources/images/logos/ACE racquets.JPG",
+  },
+  {
+    img: "Sources/images/logos/Happick.JPG",
+  },
+  {
+    img: "Sources/images/logos/Gloline.JPG",
+  },
+  {
+    img: "Sources/images/logos/Club.JPG",
+  },
+  {
+    img: "Sources/images/logos/RMJ.JPG",
+  },
+  {
+    img: "Sources/images/logos/Advisory.JPG",
+  },
+  {
+    img: "Sources/images/logos/Tikkaow.JPG",
+  },
+  {
+    img: "Sources/images/logos/Vibfast.JPG",
+  },
+  {
+    img: "Sources/images/logos/AlmaShines.JPG",
+  },
+  {
+    img: "Sources/images/logos/quickDraft.JPG",
+  },
 
 
 ];
