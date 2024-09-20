@@ -1,13 +1,5 @@
 import React, { useEffect } from "react";
 
-// import img1 from "../assets/img/Hitechlogo.png";
-// import img2 from "../assets/img/client3.png";
-// import img3 from "../assets/img/client3.png";
-// import img4 from "../assets/img/client4.png";
-// import img5 from "../assets/img/client5.png";
-// import img6 from "../assets/img/client6.png";
-// import img7 from "../assets/img/client7.png";
-// import img8 from "../assets/img/client8.png";
 const client = [
   {
     img: "Sources/images/logos/prepseed.png",
@@ -246,6 +238,27 @@ const client = [
   },
   {
     img: "Sources/images/logos/quickDraft.JPG",
+  },
+  {
+    img: "Sources/images/logos/Proffestional Edge.JPG",
+  },
+  {
+    img: "Sources/images/logos/H4Healing.JPG",
+  },
+  {
+    img: "Sources/images/logos/Soul.JPG",
+  },
+  {
+    img: "Sources/images/logos/Hyrespree.JPG",
+  },
+  {
+    img: "Sources/images/logos/PBI.JPG",
+  },
+  {
+    img: "Sources/images/logos/Tronsoft.JPG",
+  },
+  {
+    img: "Sources/images/logos/risentech.JPG",
   },
 
 
