@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 
 // import img1 from "../assets/img/Hitechlogo.png";
 // import img2 from "../assets/img/client3.png";
@@ -44,7 +44,7 @@ const client = [
     img: "Sources/images/cardinal.png",
   },
   {
-    img:   'Sources/images/logos/digvijay.png',
+    img: 'Sources/images/logos/digvijay.png',
   },
   {
     img: "Sources/images/logos/64.png",
@@ -93,7 +93,7 @@ const client = [
   {
     img: "Sources/images/logos/codertrails.png",
   },
-  
+
   // {
   //   img: "Sources/images/logos/bsquare.png",
   // },
@@ -201,16 +201,18 @@ const AllClients = () => {
         behavior: "smooth",
       });
     };
-  
+
     scrollToTop(); // Call the function when the component mounts
-  }, []); 
+  }, []);
   return (
     <>
-    <div className="section_padding"></div>
-    <div className="section_padding"></div>
+      <div className="section_padding"></div>
+      <div className="section_padding"></div>
       <div className="container section_padding">
-        <div>
-          <h1 className="heading_style">Our Partners</h1>
+        <div className="text-center mt-5 mb-5">
+
+          <h2 className="title-section">Our<span className="marked"> Partners</span> </h2>
+          <div className="divider mx-auto"></div>
         </div>
       </div>
       <section className="section section-default mt-none mb-none">
