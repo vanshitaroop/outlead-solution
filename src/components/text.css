@@ -95,7 +95,7 @@
   #cards .card_content {
    
     margin: 20px 30px;
-    padding: 40px 30px;
+    padding: 20px 20px;
     border-radius: 4px;
     /* height: 45vh; */
     background-color: #222327;
@@ -142,7 +142,7 @@
     font-weight: 300;
     opacity: 0.7;
   }
-  
+/*   
   #cards .card_content.selected::before {
     content: "";
     width: 50%;
@@ -154,7 +154,7 @@
     background-position: right;
     background-size: 10px;
     z-index: -1;
-  }
+  } */
   
   #cards .card_content.selected {
     background-color: #161619;

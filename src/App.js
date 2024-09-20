@@ -1,7 +1,7 @@
 
 import './App.css';
 import { Navbar } from './components/Navbar';
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 
 import { ContactCeo } from './components/ContactCeo';
@@ -18,22 +18,22 @@ import AllClients from './components/AllClients';
 // import { Navbartry } from './components/Navbartry';
 import img1 from "./assets/img/bulb-on.png"
 function App() {
-  
+
   return (
     <div className="App">
-      <Navbartry/>
+      <Navbartry />
       <Routes>
-          <Route exact path="/" element={<Mainpage/>} />
-          <Route exact path="/contactCeo" element={<ContactCeo/>} />
-          <Route exact path="/about" element={<About/>} />
-          <Route exact path="/portfolio" element={<Portfolio/>}/>
-          <Route exact path="/services" element={<Services/>}/>
-          <Route exact path="/blogs" element={<Blogs/>}/>
-          <Route exact path="/AllClients" element={<AllClients/>}/>
+        <Route exact path="/" element={<Mainpage />} />
+        <Route exact path="/contactCeo" element={<ContactCeo />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/portfolio" element={<Portfolio />} />
+        <Route exact path="/services" element={<Services />} />
+        <Route exact path="/blogs" element={<Blogs />} />
+        <Route exact path="/AllClients" element={<AllClients />} />
 
-        </Routes>
-      
-      <Footer/>
+      </Routes>
+
+      <Footer />
     </div>
   );
 }

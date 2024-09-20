@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export const Footer = () => {
     return (
         <>
-            <footer class="footer-07" style={{ paddingTop: "80px" }}>
+            <footer class="footer-07" >
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-12 text-center">
@@ -38,11 +38,11 @@ export const Footer = () => {
 
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row mt-3">
                         <div class="col-md-12 text-center">
                             <p class="copyright">
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved<i class="ion-ios-heart" aria-hidden="true"></i> by <a target="_blank">Outlead Solution
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved<i class="ion-ios-heart" aria-hidden="true"></i> by <a target="_blank" style={{color:"#ffffff91"}}>Outlead Solution
                                 </a>
                             </p>
                         </div>

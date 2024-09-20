@@ -11,14 +11,14 @@ export const Mainpage = () => {
 
   return (
     <>
-        <Home/>
-        <Whatwedo/>
-        <Clients/>
-        <OurkeyClients2/>
-        <Testting/>
-        <Process/>
+      <Home />
+      <Whatwedo />
+      <Clients />
+      <OurkeyClients2 />
+      <Testting />
+      <Process />
       <Testimonial />
-       
+
     </>
   )
 }

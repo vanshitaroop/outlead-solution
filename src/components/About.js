@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import bg from "../assets/img/bgcontact.png"
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -21,7 +21,16 @@ export const About = () => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  
+    scrollToTop(); // Call the function when the component mounts
+  }, []); 
   return (
 
     <div className='aboutpage  aboutpage-mob'>
@@ -43,13 +52,13 @@ export const About = () => {
             </p>
 
             {/* <div id="about-us-modal"> */}
-              <Modal title={null} open={isModalOpen} header={null} onCancel={handleCancel} footer={null}>
-                <br />  <br />
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                  <a href="mailto:admin@outleadsolutions.com" class="btn btn-primary mr-3">E-Mail</a>
-                  <a href="tel:+91 99133 82221" class="btn btn-outline mx-2" >Contact</a>
-                </div>  <br />
-              </Modal>
+            <Modal title={null} open={isModalOpen} header={null} onCancel={handleCancel} footer={null}>
+              <br />  <br />
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <a href="mailto:admin@outleadsolutions.com" class="btn btn-primary mr-3">E-Mail</a>
+                <a href="tel:+91 99133 82221" class="btn btn-outline mx-2" >Contact</a>
+              </div>  <br />
+            </Modal>
             {/* </div> */}
             <button type="button" onClick={showModal} className="GAQ" >Reach Out To Us! <i className="fa fa-paper-plane"></i></button>
           </Col>

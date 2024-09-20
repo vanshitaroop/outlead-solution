@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import bgimg from "../assets/img/bg_image_3.png";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -10,10 +10,12 @@ import { BsLinkedin } from "react-icons/bs";
 import img1 from "../assets/img/icons/outbonding.gif"
 import img3 from "../assets/img/icons/discount-unscreen.gif"
 import img4 from "../assets/img/icons/computer-unscreen.gif"
-import img5 from "../assets/img/icons/responsive-design-unscreen.gif" 
+import img5 from "../assets/img/icons/responsive-design-unscreen.gif"
 import img6 from "../assets/img/icons/email-unscreen.gif"
 import img7 from "./../assets/img/icons/copywriting-unscreen.gif"
 import img8 from "../assets/img/icons/notebook-unscreen.gif"
+import img9 from "../assets/img/icons/seo-unscreen.gif"
+import img10 from "../assets/img/icons/camera-unscreen.gif"
 
 
 export const Services = () => {
@@ -22,6 +24,16 @@ export const Services = () => {
   const handleMouseEnter = (index) => {
     setSelectedCard(index);
   };
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    scrollToTop(); // Call the function when the component mounts
+  }, []);
 
   return (
     <>
@@ -47,7 +59,7 @@ export const Services = () => {
                     </div>
                   </div>
                 </div>
-              
+
               </div>
             </div>
 
@@ -130,15 +142,10 @@ export const Services = () => {
                   </div>
                   <h6>B2B LEAD GENERATION</h6>
                   <ul>
-                  <li className='text-white'>
-                    OutLead Solutions provides Lead Generation service which has unique process itself and can be useful to fulfil your need for business goal.</li>
-                    </ul>
-                  {/* <ul>
-                    <li>Digital Branding</li>
-                    <li>Web & Mobile Sites</li>
-                    <li>User Interface Design</li>
-                    <li>Responsive Techs</li>
-                  </ul> */}
+                    <li className='text-white'>
+                      OutLead Solutions provides Lead Generation service which has unique process itself and can be useful to fulfil your need for business goal.</li>
+                  </ul>
+
                 </div>
 
               </div>
@@ -170,14 +177,9 @@ export const Services = () => {
                   </div>
                   <h6>WEB DEVELOPMENT</h6>
                   <ul>
-                  <li className='text-white'>Outlead Solutions also improvises your online visibility by using website development which can be further used to explore your work by your customers.</li>
+                    <li className='text-white'>Outlead Solutions also improvises your online visibility by using website development which can be further used to explore your work by your customers.</li>
                   </ul>
-                  {/* <ul>
-                    <li>Custom Platform</li>
-                    <li>Back-End Executions</li>
-                    <li>Interface Apps</li>
-                    <li>Mobile Systems</li>
-                  </ul> */}
+
                 </div>
 
               </div>
@@ -210,14 +212,9 @@ export const Services = () => {
                   </div>
                   <h6>Social Media Marketing</h6>
                   <ul>
-                  <li className='text-white'>OutLead Solutions further harmonizes the unique tool for Lead Generation with careful and meticulously planned social media marketing techniques.</li>
+                    <li className='text-white'>OutLead Solutions further harmonizes the unique tool for Lead Generation with careful and meticulously planned social media marketing techniques.</li>
                   </ul>
-                  {/* <ul>
-                    <li>Custom Platform</li>
-                    <li>Back-End Executions</li>
-                    <li>Interface Apps</li>
-                    <li>Mobile Systems</li>
-                  </ul> */}
+
                 </div>
 
               </div>
@@ -227,19 +224,42 @@ export const Services = () => {
                 <div className={`card_content ${selectedCard === 5 ? 'selected' : ''}`}
                   onMouseEnter={() => handleMouseEnter(5)}>
                   <div className="card__icon">
-                    <img src={img8} alt="icon.png"  />
+                    <img src={img8} alt="icon.png" />
                   </div>
                   <h6>Content Writing</h6>
                   <ul><li>
                     OutLead Solutions offers the option of Content Writing and Posting for instances where sharing of detailed information is vital and pictures/graphics cannot do enough justice to the data in hand.</li></ul>
-                  {/* <ul>
-                    <li>Custom Platform</li>
-                    <li>Back-End Executions</li>
-                    <li>Interface Apps</li>
-                    <li>Mobile Systems</li>
-                  </ul> */}
+
                 </div>
 
+              </div>
+              <div className='col-md-6 col-lg-6 col-xl-4 col-sm-12' data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+              >
+                <div className={`card_content ${selectedCard === 7 ? 'selected' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(7)}>
+                  <div className="card__icon">
+                    <img src={img9} alt="icon.png" />
+                  </div>
+                  <h6>SEO & GOOGLE ADS</h6>
+                  <ul><li>
+                    Amplify your online presence with our expert SEO and Google Ads management. With Keyword Optimization & Strategic Ad Campaigns, we enhance your website's visibility and drive targeted traffic..</li></ul>
+
+                </div>
+              </div>
+              <div className='col-md-6 col-lg-6 col-xl-4 col-sm-12' data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-duration="1000"
+              >
+                <div className={`card_content ${selectedCard === 8 ? 'selected' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(8)}>
+                  <div className="card__icon">
+                    <img src={img10} alt="icon.png" />
+                  </div>
+                  <h6>PHOTOSHOOT</h6>
+                  <ul><li>
+                    Photoshoot services for a company involve creating professional images of products, commercial properties, or events, enhancing branding and marketing materials, as well as online presence to attract customers and showcase offerings effectively.</li></ul>
+
+                </div>
               </div>
             </div>
           </div>

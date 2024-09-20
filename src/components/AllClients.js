@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 // import img1 from "../assets/img/Hitechlogo.png";
 // import img2 from "../assets/img/client3.png";
@@ -168,6 +168,16 @@ const client = [
 
 ];
 const AllClients = () => {
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  
+    scrollToTop(); // Call the function when the component mounts
+  }, []); 
   return (
     <>
     <div className="section_padding"></div>
@@ -188,7 +198,7 @@ const AllClients = () => {
                 <>
                   <div className="col-xl-2 col-lg-2 col-md-4 col-sm-6  p-2 ">
                     <img src={item.img} alt="" className="w-100 client_img" data-aos="fade-right"
-                      data-aos-offset="300"
+                      data-aos-offset="100"
                       data-aos-easing="ease-in-sine" />
                   </div>
                 </>

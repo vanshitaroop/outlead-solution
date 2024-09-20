@@ -1,8 +1,7 @@
-import React from "react";
+import React,{useEffect} from "react";
 import bg from "../assets/img/man.png";
 import elements from "../assets/img/elements.png";
 import { useState } from "react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -75,6 +74,16 @@ export const Home = () => {
       setIndex((prevIndex) => prevIndex + 1);
     }
   };
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  
+    scrollToTop(); // Call the function when the component mounts
+  }, []); 
   return (
     <>
       <div className="hero">
