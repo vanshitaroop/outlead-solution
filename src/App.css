@@ -5043,7 +5043,6 @@ hr {
 .aliceCar {
   padding: 20px;
   padding-top: 40px;
-  /* background-color: var(--testomonial-back); */
 }
 
 .aliceCarclient {
@@ -5177,7 +5176,7 @@ hr {
   bottom: 2%;
   left: 2%; */
   /* background-color: var(--switch-back-color); */
-  background-color: rgb(33,37,41);
+  background-color:transparent;
   /* padding: 10px; */
   border-radius: 3px;
   border: none;
