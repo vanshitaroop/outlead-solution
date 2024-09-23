@@ -331,6 +331,7 @@ p {
   --about-back-outlead: rgb(239, 239, 239);
   transition: 0.5s;
   --back-color:rgb(255, 255, 255);
+  --LinksColor:black;
 }
 
 .dark-mode {
@@ -355,6 +356,7 @@ p {
   --about-back-outlead: #22252b;
   --see-more: white;
   --back-color:black;
+  --LinksColor:white
   transition: 0.5s;
 
 }
@@ -1136,7 +1138,7 @@ footer {
 }
 
 .footer-07 {
-  background: #121212;
+  background: rgb(33, 37, 41);
 }
 
 
@@ -5184,10 +5186,14 @@ hr {
 }
 
 .typer-back {
-  background-color: var(--type-back);
+  /* background-color: var(--type-back); */
   width: fit-content;
   border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+.typer-back h3{
+  padding: 0px 0px;
+  color: var(--LinksColor);
 }
 
 .para-testo {

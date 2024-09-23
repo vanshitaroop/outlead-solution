@@ -25,6 +25,25 @@ import img1 from "../assets/img/bulb-on.png"
 export function Navbartry() {
   const [showBasic, setShowBasic] = useState(false);
   const navbarRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+      const handleScroll = () => {
+          if (window.scrollY > 200) {
+              setIsSticky(true);
+          } else {
+              setIsSticky(false);
+          }
+      };
+
+      // Attach scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+      // Cleanup event listener when component unmounts
+      return () => {
+          window.removeEventListener("scroll", handleScroll);
+      };
+  }, []);
   function handleClick() {
     setShowBasic(false);
   }
@@ -61,70 +80,72 @@ export function Navbartry() {
     };
   }, []);
   return (
-    <MDBNavbar expand='lg' dark bgColor='dark' id='navbar' ref={navbarRef}>
-      <MDBContainer fluid>
-        <Link to={"/"}> <img
-          src={logo}
-          height='85'
-          alt=''
-          loading='lazy'
-        /></Link>
-        <MDBNavbarToggler
-          onClick={() => setShowBasic(!showBasic)}
-          data-target='#navbarRightAlignExample'
-          aria-controls='navbarRightAlignExample'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <MDBIcon icon='bars' fas />
-        </MDBNavbarToggler>
+    <div className={`OutleadNavigationBar ${isSticky ? "sticky" : ""}`}>
+      <MDBNavbar expand='lg'  id='navbar' ref={navbarRef}>
+        <MDBContainer fluid>
+          <Link to={"/"}> <img
+            src={logo}
+            height='85'
+            alt=''
+            loading='lazy'
+          /></Link>
+          <MDBNavbarToggler
+            onClick={() => setShowBasic(!showBasic)}
+            data-target='#navbarRightAlignExample'
+            aria-controls='navbarRightAlignExample'
+            aria-expanded='false'
+            aria-label='Toggle navigation'
+          >
+            <MDBIcon icon='bars' fas />
+          </MDBNavbarToggler>
 
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to="">
-                <LinkContainer to="/about">
-                  <Nav.Link onClick={handleClick}>About</Nav.Link>
-                </LinkContainer>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to="">
-                <LinkContainer to="/AllClients">
-                  <Nav.Link onClick={handleClick}>Clients</Nav.Link>
-                </LinkContainer>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to="">
-                <LinkContainer to="/services">
-                  <Nav.Link onClick={handleClick}>Service</Nav.Link>
-                </LinkContainer>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to="">
-                <LinkContainer to="/contactceo">
-                  <Nav.Link onClick={handleClick}>Contact</Nav.Link>
-                </LinkContainer>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
-            {/* <MDBNavbarItem>
+          <MDBCollapse navbar show={showBasic}>
+            <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' to="">
+                  <LinkContainer to="/about">
+                    <Nav.Link onClick={handleClick}>About</Nav.Link>
+                  </LinkContainer>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' to="">
+                  <LinkContainer to="/AllClients">
+                    <Nav.Link onClick={handleClick}>Clients</Nav.Link>
+                  </LinkContainer>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' to="">
+                  <LinkContainer to="/services">
+                    <Nav.Link onClick={handleClick}>Service</Nav.Link>
+                  </LinkContainer>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' to="">
+                  <LinkContainer to="/contactceo">
+                    <Nav.Link onClick={handleClick}>Contact</Nav.Link>
+                  </LinkContainer>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+              {/* <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' to="">
                 <LinkContainer to="/blogs">
                   <Nav.Link onClick={handleClick}>Blogs</Nav.Link>
                 </LinkContainer>
               </MDBNavbarLink>
             </MDBNavbarItem> */}
-            <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' to="">
-                <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+              <MDBNavbarItem>
+                <MDBNavbarLink active aria-current='page' to="">
+                  <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button>
+                </MDBNavbarLink>
+              </MDBNavbarItem>
 
-          </MDBNavbarNav>
-        </MDBCollapse>
-      </MDBContainer>
-    </MDBNavbar>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBContainer>
+      </MDBNavbar>
+    </div>
   );
 }

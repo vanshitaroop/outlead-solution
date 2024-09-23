@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import bg from "../assets/img/man.png";
 import elements from "../assets/img/elements.png";
 import { useState } from "react";
@@ -37,41 +37,38 @@ export const Home = () => {
     // "Social Media Marketing",
   ];
 
-
   const period = 2000;
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
+    return () => clearInterval(ticker);
+  }, [text, delta]); // Dependency on text and delta ensures smooth updates
+
   const tick = () => {
-    let i = loopNum % toRotate.length;
+    let i = loopNum % toRotate.length; // Current text to display
     let fullText = toRotate[i];
     let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+      ? fullText.substring(0, text.length - 1) // Remove character if deleting
+      : fullText.substring(0, text.length + 1); // Add character if typing
 
     setText(updatedText);
 
     if (isDeleting) {
+      // Decrease speed while deleting for a natural feel
       setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
+      // When typing completes, set to deleting mode
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
+      setDelta(period); // Pause before starting to delete
     } else if (isDeleting && updatedText === "") {
+      // Once the deleting finishes, move to the next text
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
+      setDelta(200); // Reset speed for typing
     }
   };
   useEffect(() => {
@@ -81,9 +78,9 @@ export const Home = () => {
         behavior: "smooth",
       });
     };
-  
+
     scrollToTop(); // Call the function when the component mounts
-  }, []); 
+  }, []);
   return (
     <>
       <div className="hero">
@@ -103,14 +100,14 @@ export const Home = () => {
             {/* <h1> {`Hi I m vanshita, A `} <span className="wrap">{text}</span> </h1> */}
             <br />
             <div
-            className="typer-back"
-              // style={{
-              //   // backgroundColor: "white",
-              //   width: "fit-content",
-              //   borderRadius: "20px",
-              // }}
+              className="typer-back"
+            // style={{
+            //   // backgroundColor: "white",
+            //   width: "fit-content",
+            //   borderRadius: "20px",
+            // }}
             >
-              <h3 className="p-3" style={{ color: "black" }} data-aos="fade-up" data-aos-duration="1000">
+              <h3 data-aos="fade-up" data-aos-duration="1000">
                 {" "}
                 {"We do "}{" "}
                 <span className="wrap" style={{ color: "orange" }}>
@@ -130,7 +127,7 @@ export const Home = () => {
         </div>
       </div>
       {/* <button onClick={toggleClick} className='theme-switch-btn'><img src={img1} alt="" /></button> */}
-      
+
     </>
   );
 };

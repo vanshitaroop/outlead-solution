@@ -73,7 +73,7 @@ export const About = () => {
               >
                 Outlead <span>Solution</span>
               </h1>
-              <p>Still Preparing...</p>
+              <p>Outlead Solutions is a premier graphics design, marketing, and web development company, dedicated to helping businesses grow their online presence. We specialize in crafting visually stunning designs, innovative marketing strategies, and high-performance websites tailored to your unique needs. Our expert team ensures optimal user experiences and drives measurable results, empowering your brand to succeed in the digital landscape.</p>
               {/* <button type="button" class="GAQ">Text us! <i class="fa fa-paper-plane"></i></button> */}
             </div>
           </Col>

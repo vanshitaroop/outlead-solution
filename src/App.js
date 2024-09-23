@@ -3,7 +3,6 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-
 import { ContactCeo } from './components/ContactCeo';
 import { Testting } from './components/Testting';
 import { Testimonial } from './components/Testimonial';
@@ -30,9 +29,7 @@ function App() {
         <Route exact path="/services" element={<Services />} />
         <Route exact path="/blogs" element={<Blogs />} />
         <Route exact path="/AllClients" element={<AllClients />} />
-
       </Routes>
-
       <Footer />
     </div>
   );
