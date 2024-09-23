@@ -237,58 +237,60 @@
    background-color: transparent;
    /* color: white; */
  }
+
  .light-mode {
-  background-color: rgb(254, 254, 254);
-  --home-main-heading: black;
-  --navbar-color-change: rgb(0, 0, 0);
-  --section-title: black;
-  --para-color: rgb(47, 47, 47);
-  --client-card-back: rgb(239, 239, 239);
-  --explore-btn: black;
-  --type-back: rgb(244, 244, 244);
-  --about-us-main-heading: black;
-  --about-para: rgb(39, 39, 39);
-  --double-color: black;
-  --title-section-title: rgb(0, 0, 0);
-  --testomonial-heading: black;
-  --testomonial-back: white;
-  --services-icon: black;
-  --choose-us-back: #f0f0f0;
-  --contact-card-back: #22252b;
-  --switch-back-color: rgb(238, 238, 238);
-  --see-more: black;
-  --about-back-outlead: rgb(239, 239, 239);
-  transition: 0.5s;
-  --back-color:rgb(255, 255, 255);
-  --LinksColor:black;
-}
+   background-color: rgb(254, 254, 254);
+   --home-main-heading: black;
+   --navbar-color-change: rgb(0, 0, 0);
+   --section-title: black;
+   --para-color: rgb(47, 47, 47);
+   --client-card-back: rgb(239, 239, 239);
+   --explore-btn: black;
+   --type-back: rgb(244, 244, 244);
+   --about-us-main-heading: black;
+   --about-para: rgb(39, 39, 39);
+   --double-color: black;
+   --title-section-title: rgb(0, 0, 0);
+   --testomonial-heading: black;
+   --testomonial-back: white;
+   --services-icon: black;
+   --choose-us-back: #f0f0f0;
+   --contact-card-back: #22252b;
+   --switch-back-color: rgb(238, 238, 238);
+   --see-more: black;
+   --about-back-outlead: rgb(239, 239, 239);
+   transition: 0.5s;
+   --back-color: rgb(255, 255, 255);
+   --LinksColor: black;
+ }
 
-.dark-mode {
-  background: #282c34;
-  --home-main-heading: rgb(255, 255, 255);
-  --navbar-color-change: rgb(255, 255, 255);
-  --section-title: white;
-  --para-color: rgb(195, 195, 195);
-  --client-card-back: rgb(255, 255, 255);
-  --explore-btn: rgb(0, 0, 0);
-  --type-back: rgb(255, 255, 255);
-  --about-us-main-heading: rgb(255, 255, 255);
-  --about-para: rgb(255, 255, 255);
-  --double-color: rgb(255, 255, 255);
-  --title-section-title: rgb(255, 255, 255);
-  --testomonial-heading: white;
-  --testomonial-back: #282c34;
-  --services-icon: white;
-  --choose-us-back: #22252b;
-  --contact-card-back: black;
-  --switch-back-color: #22252b;
-  --about-back-outlead: #22252b;
-  --see-more: white;
-  --back-color:black;
-  --LinksColor:white;
-  transition: 0.5s;
+ .dark-mode {
+   background: #282c34;
+   --home-main-heading: rgb(255, 255, 255);
+   --navbar-color-change: rgb(255, 255, 255);
+   --section-title: white;
+   --para-color: rgb(195, 195, 195);
+   --client-card-back: rgb(255, 255, 255);
+   --explore-btn: rgb(0, 0, 0);
+   --type-back: rgb(255, 255, 255);
+   --about-us-main-heading: rgb(255, 255, 255);
+   --about-para: rgb(255, 255, 255);
+   --double-color: rgb(255, 255, 255);
+   --title-section-title: rgb(255, 255, 255);
+   --testomonial-heading: white;
+   --testomonial-back: #282c34;
+   --services-icon: white;
+   --choose-us-back: #22252b;
+   --contact-card-back: black;
+   --switch-back-color: #22252b;
+   --about-back-outlead: #22252b;
+   --see-more: white;
+   --back-color: black;
+   --LinksColor: white;
+   transition: 0.5s;
 
-}
+ }
+
  #navbar .nav-link {
    color: var(--LinksColor);
  }
@@ -306,9 +308,10 @@
  }
 
  @media (max-width:769px) {
-  #navbar .nav-link {
-    color: white;
-  }
+   #navbar .nav-link {
+     color: white;
+   }
+
    #navbar {
      background-color: rgb(33, 37, 41);
      color: white;
@@ -327,7 +330,7 @@
    } */
 
    .navbar-toggler {
-     color: white;
+    color: white;
    }
 
    .OutleadNavigationBar {
@@ -346,6 +349,7 @@
    }
 
  }
- .about_content p{
-  color: var(--para-color);
+
+ .about_content p {
+   color: var(--para-color);
  }

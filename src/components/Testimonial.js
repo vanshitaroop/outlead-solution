@@ -55,7 +55,7 @@ export const Testimonial = () => {
 
   return (
     <>
-      <div class="nine" style={{ marginTop: "60px" }}>
+      <div class="nine" >
         <h1>
           <span>
             <h2>Testimonials</h2>
