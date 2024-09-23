@@ -335,7 +335,7 @@ p {
 }
 
 .dark-mode {
-  background: #282c34;
+  background: #23272e;
   --home-main-heading: rgb(255, 255, 255);
   --navbar-color-change: rgb(255, 255, 255);
   --section-title: white;
@@ -5043,7 +5043,7 @@ hr {
 .aliceCar {
   padding: 20px;
   padding-top: 40px;
-  background-color: var(--testomonial-back);
+  /* background-color: var(--testomonial-back); */
 }
 
 .aliceCarclient {
